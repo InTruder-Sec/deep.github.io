@@ -1,6 +1,15 @@
 
+* {
+    margin: 0%;
+}
+
 .header_001 {
-    height: 20%;
     width: 100%;
-    background-color: black;
+    height: 80px;
+    background: rgb(14, 5, 190);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+.sub_header_001 {
+    display: flex;
+    justify-content: space-between;
 }
