@@ -11,5 +11,23 @@
 }
 .sub_header_001 {
     display: flex;
-    justify-content: space-between;
+    margin-left: 80%;
+    justify-content: space-around;
+}
+
+.header_button {
+    width: 100px;
+    text-align: center;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.header_button_main {
+    height: 10%;
+    width: 100%;
+    border-width: 0ch;
+    background-color: aqua;
+    opacity: 50%;
+    border-spacing: 2%;
+    border-radius: 5px;
 }
