@@ -3,7 +3,7 @@ function funClose() {
 }
 
 function funSmall() {
-    document.getElementById("small").textcontent = "-"
+    document.getElementById("small").textContent = "-"
 }
 
 function funMin() {
