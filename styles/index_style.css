@@ -14,7 +14,7 @@
 
 .v_1_2 {
     width: 133px;
-    color: rgba(255,255,255,1);
+    color: #00cc44;
     background-color: black;
     border: 0px;
     position: absolute;
@@ -22,13 +22,13 @@
     margin-top: 40px;
     font-family: Anek Telugu;
     font-weight: Regular;
-    font-size: 16px;
+    font-size: 18px;
     opacity: 1;
     text-align: center;
 }
 .v_1_3 {
     width: 133px;
-    color: rgba(255,255,255,1);
+    color: #00cc44;
     background-color: black;
     border: 0px;
     position: absolute;
@@ -36,27 +36,14 @@
     margin-top: 40px;
     font-family: Anek Telugu;
     font-weight: Regular;
-    font-size: 16px;
+    font-size: 18px;
     opacity: 1;
     text-align: center;
-}
-.v_1_5 {
-    width: 334px;
-    height: 300px;
-    background: url("../images/v8_35.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    margin-top: 10%;
-    margin-left: 3%;
-    position: absolute;
-    overflow: hidden;
 }
 
 .v_1_4 {
     width: 133px;
-    color: rgba(255,255,255,1);
+    color: #00cc44;
     background-color: black;
     border: 0px;
     position: absolute;
@@ -64,13 +51,100 @@
     margin-top: 40px;
     font-family: Anek Telugu;
     font-weight: Regular;
-    font-size: 16px;
+    font-size: 18px;
     opacity: 1;
     text-align: center;
+}
+.v_1_6 {
+  display: flex;
+  height: 600px;
+  width: 600px;
+  line-height: 50px;
 }
 .v_1_5 {
     height: 434px;
     width: 434px;
     margin-top: 60px;
     margin-left: 40px;
+}
+.v_1_7 {
+  height: fit-content;
+  width: fit-content;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+
+
+
+.line__1,
+.line__2 {
+  width: auto;
+  overflow: hidden;
+  margin: 0.5rem auto;
+  font-family: "Major Mono Display", monospace;
+  font-size: 2rem;
+  font-weight: bold;
+
+}
+
+.line__1 {
+  border-right: 2px solid rgba(17, 17, 17, 0.9);
+  height: fit-content;
+  align-items: flex-start;
+  color: #00cc44;
+  margin-top: 250px;
+  max-width: fit-content;
+  /* define animation types for text + cursor */
+  animation: animated-text__1 6s steps(30, end) 1s 1 normal both,
+    animated-cursor__1 300ms steps(30, end) 8;
+}
+
+.line__2 {
+  border-right: 2px solid rgba(17, 17, 17, 0.9);
+  height: fit-content;
+  position: absolute;
+  color: #00cc44;
+  max-width: fit-content;
+  font-size: 70px;
+  /* define animation types for text + cursor */
+  animation: animated-text__2 4s steps(30, end) 1s 1 normal both,
+    animated-cursor__2 900ms steps(30, end) 8;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+@keyframes animated-cursor__1 {
+  from {
+    border-right-color: rgba(17, 17, 17, 0.9);
+  }
+  to {
+    border-right-color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@keyframes animated-cursor__2 {
+  from {
+    border-right-color: rgba(17, 17, 17, 0.9);
+  }
+  to {
+    border-right-color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@keyframes animated-text__1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 45rem;
+  }
+}
+
+@keyframes animated-text__2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 29rem;
+  }
 }
