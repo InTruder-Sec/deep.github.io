@@ -18,8 +18,8 @@
     background-color: black;
     border: 0px;
     position: absolute;
-    margin-left: 72%;
-    margin-top: 30px;
+    margin-left: 65%;
+    margin-top: 40px;
     font-family: Anek Telugu;
     font-weight: Regular;
     font-size: 16px;
@@ -32,8 +32,8 @@
     background-color: black;
     border: 0px;
     position: absolute;
-    margin-left: 80%;
-    margin-top: 30px;
+    margin-left: 75%;
+    margin-top: 40px;
     font-family: Anek Telugu;
     font-weight: Regular;
     font-size: 16px;
@@ -46,11 +46,17 @@
     background-color: black;
     border: 0px;
     position: absolute;
-    margin-left: 88%;
-    margin-top: 30px;
+    margin-left: 85%;
+    margin-top: 40px;
     font-family: Anek Telugu;
     font-weight: Regular;
     font-size: 16px;
     opacity: 1;
     text-align: center;
+}
+.v_1_5 {
+    height: 434px;
+    width: 434px;
+    margin-top: 60px;
+    margin-left: 40px;
 }
