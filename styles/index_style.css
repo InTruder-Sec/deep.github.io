@@ -54,3 +54,16 @@
     opacity: 1;
     text-align: center;
 }
+.v_1_5 {
+    width: 334px;
+    height: 300px;
+    background: url("../images/v8_35.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    margin-top: 10%;
+    margin-left: 3%;
+    position: absolute;
+    overflow: hidden;
+}
