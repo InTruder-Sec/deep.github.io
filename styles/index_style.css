@@ -273,7 +273,8 @@ h1 {
   margin-left: 5px;
 }
 u {
-  font-family: "Major Mono Display", monospace;
+  font-family: 'Satisfy', cursive;
+  font-size: 60px;
 }
 .v_3_0 {
   position: absolute;
@@ -292,16 +293,20 @@ u {
   position: absolute;
   width: 350px;
   height: 400px;
+  transition: transform .2s;
   left: 20px;
   top: 150px;
   background: #FFFFFF;
   border-radius: 25px;
 }
+
 .v_3_2 {
   position: absolute;
   width: 350px;
   height: 400px;
   left: 430px;
+  transition: transform .2s;
+  font-family: 'Satisfy', cursive;
   top: 150px;
   background: #FFFFFF;
   border-radius: 25px;
@@ -312,13 +317,40 @@ u {
   height: 400px;
   left: 830px;
   top: 150px;
+  transition: transform .2s;
   background: #FFFFFF;
   border-radius: 25px;
+}
+
+.v_3_1:hover,
+.v_3_2:hover,
+.v_3_3:hover {
+  transform: scale(1.2);
 }
 
 h6 {
   color: #000000;
   line-height: 40px;
-  font-family: 'Encode Sans Semi Expanded', sans-serif !important;
-  font-weight: 100px;
+  font-family: 'Lekton', sans-serif;
+  margin-top: 10px;
+}
+.date {
+  font-size: large;
+  color: #000000;
+  font-weight: bold;
+  font-family: 'Lekton', sans-serif;
+}
+.details {
+  font-size: large;
+  line-height: 20px;
+  color: #000000;
+  letter-spacing: 0.1;
+  font-family: 'Lekton', sans-serif;
+  font-weight: 500;
+}
+.v_3_4,
+li {
+  color: #000000;
+  text-align: left;
+  width: 300px;
 }
