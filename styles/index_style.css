@@ -355,7 +355,84 @@ li {
   width: 300px;
 }
 
-.v_4_0 {
-  left: 45%;
-  top: 2000px;
+.head {
+  margin-left: 45%;
+  margin-top: 750px;
+  margin-bottom: 50px;
 }
+
+.container { 
+  top: 50px;
+  max-width: 1080px; 
+  height: 300px;
+  margin: 0 auto; 
+  color: #000000 !important;
+  padding: 20px;
+}
+.tabs {
+  position: relative;
+  display: flex;
+  min-height: 300px;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+}
+
+.tabby-tab {
+  flex: 1;
+}
+
+.tabby-tab label {
+  display: block;
+  color: #000000;
+  box-sizing: border-box;
+    height: 40px;
+  
+  padding: 10px;
+  text-align: center;
+  background: #ffffff;
+  cursor: pointer;
+  transition: background 0.5s ease;
+  
+}
+
+.tabby-tab label:hover {
+  background: #ffffff;
+}
+
+.tabby-content {
+  position: absolute;
+  color: #000000;
+  left: 0; bottom: 0; right: 0;
+  top: 40px; 
+  height: 1000px !important;
+  padding: 20px;
+  border-bottom-right-radius: 10px;
+  background: #e0e0e0;
+  
+  transition: 
+    opacity 0.8s ease,
+    transform 0.8s ease;
+
+    opacity: 0;
+    transform: scale(0.1);
+    transform-origin: top left;
+  
+}
+
+.tabby-tab [type=radio] { display: none; }
+[type=radio]:checked ~ label {
+  background: #e0e0e0;
+  z-index: 2;
+}
+
+[type=radio]:checked ~ label ~ .tabby-content {
+  z-index: 1;
+    opacity: 1;
+    transform: scale(1);
+}
+p {
+  color: #000000;
+}
+
+
+
