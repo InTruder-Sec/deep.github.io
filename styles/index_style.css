@@ -388,20 +388,49 @@ li {
 }
 .tab1 {
   display: inline-block;
-  height: 100%;
-  width: 150px;
-  text-align: center;
+  height: 37px;
+  margin-left: 655px;
+  position: absolute;
+  width: 175px;
+  color: #000000;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  text-transform: uppercase;
+  padding-top: 13px;
+  padding-left: 10px;
+  background-color: whitesmoke;
 }
 .tab2 {
   display: inline-block;
-  height: 100%;
-  width: 150px;
-  text-align: center;
+  height: 37px;
+  width: 175px;
+  margin-left: 840px;
+  position: absolute;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding-top: 13px;
+  padding-left: 10px;
+  text-transform: uppercase;
+  color: #000000;
 }
 .tab3 {
   display: inline-block;
-  height: 100%;
-  width: 150px;
-  text-align: center;
+  height: 37px;
+  width: 175px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-left: 1030px;
+  padding-top: 13px;
+  padding-left: 10px;
+  position: absolute;
+  color: #000000;
+ 
+  text-transform: uppercase;
 }
-
+.cross {
+  display: inline;
+  position: relative;
+  color: #000000;
+  left: 30px;
+  font-weight: 1000;
+}
