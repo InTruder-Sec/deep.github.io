@@ -1,0 +1,353 @@
+html {
+    scroll-behavior: smooth;
+}
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: red;
+  }
+  
+  ::selection {
+    color: white;
+    background: red;
+  }
+body{
+    color: whitesmoke;
+    background-color: #151515;
+}
+.Header {
+    position: -webkit-sticky;
+}
+
+.page {
+    height: 100%;
+    width: 100%;
+}
+ul {
+    list-style: none;
+}
+li {
+    display: inline-block;
+    padding: 15px;
+}
+.contents {
+    align-self: flex-end;
+    position: relative;
+    margin-top: 10px;
+    width: fit-content;
+    margin-left: 65%;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a {
+    color: azure;
+    text-decoration: none;
+}
+.about-effect {
+    width: 55px;
+    height: 5px;
+    left: 50%;
+    top: 0%;
+    background-color: rgb(231, 38, 38);
+}
+
+.experience-effect {
+    width: 92px;
+    height: 5px;
+    left: 50%;
+    top: 0%;
+
+    background-color: blueviolet;
+}
+.projects-effect {
+    width: 75px;
+    height: 5px;
+    left: 50%;
+    top: 0%;
+
+    background-color: rgb(53, 161, 194);
+}
+.socials-effect {
+    width: 65px;
+    height: 5px;
+    left: 50%;
+    top: 0%;
+    background-color: rgb(210, 144, 44);
+}
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
+.intro {
+    padding: 30px;
+    margin-top: 60px;
+    margin-left: 160px;
+}
+.intro-content {
+    position: absolute;
+    display: inline-block;
+    padding-left: 20px;
+    letter-spacing: 1px;
+    font-size: 21px;
+    font-weight: 100;
+    font-family: 'Source Code Pro', monospace;
+}
+.intro-content2 {
+    position: absolute;
+    display: inline;
+    padding-left: 20px;
+    margin-top: 55px;
+    font-weight: 300;
+    color: #dd3737;
+    letter-spacing: 2px;
+    font-size: small;
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+.intro-content3 {
+    position: absolute;
+    display: inline;
+    padding-left: 20px;
+    margin-top: 50px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 30px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+.intro-content4 {
+    position: absolute;
+    display: inline;
+    padding-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 150px;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.contact-us {
+    background-color: #dd3737;
+    border-width: 0px;
+    color: whitesmoke;
+    height: 50px;
+    width: 140px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    position: absolute;
+    margin-left: 20px;
+    transition: 0.6s;
+    margin-top: 200px;
+}
+.contact-us:hover {
+    background-color: #d5b019;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.about-head {
+    font-size: 150px;
+    color: black;
+    margin-left: 250px;
+    margin-top: 100px;
+    text-transform: uppercase;
+    font-family: 'Source Code Pro', monospace;
+}
+.about-me {
+    position: absolute;
+    margin-top: 110px;
+    font-size: 50px;
+    margin-left: 230px;
+    font-family: 'Source Code Pro', monospace;
+}
+.about-content1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin-top: 70px;
+    margin-left: 350px;
+    width: 800px;
+    font-weight: 400;
+    color: whitesmoke;
+}
+.socials-button {
+    background-color: #dd3737;
+    border-width: 0px;
+    color: whitesmoke;
+    height: 50px;
+    width: 140px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    position: absolute;
+    transition: 0.6s;
+    margin-top: 40px;
+}
+.socials-button:hover {
+    background-color: #d5b019;
+}
+.title-experience {
+    font-size: 150px;
+    color: black;
+    margin-left: 250px;
+    margin-top: 200px;
+    text-transform: uppercase;
+    font-family: 'Source Code Pro', monospace;
+}
+.experience-head {
+    position: absolute;
+    margin-top: 110px;
+    font-size: 50px;
+    margin-left: 230px;
+    font-family: 'Source Code Pro', monospace;
+}
+.vtf-exp {
+    height: 400px;
+    width: 400px;
+    margin-left: 42%;
+    margin-top: 130px;
+}
+.vtf-img {
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.vtf-border {
+    height: 3px;
+    width: 350px;
+    background-color: red;
+    position: sticky;
+}
+.vtf-head {
+    height: 100px;
+    padding: 0px;
+    align-items: center;
+    width: 350px;
+    margin-top: 0px;
+    margin-left: 30px;
+    background-color: rgb(52, 45, 45);
+}
+.vtf-title {
+    align-self: center;
+    margin-left: 15px;
+    padding-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+.vtf-location {
+    margin-left: 250px;
+    padding-top: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.vtf-role {
+    margin-left: 15px;
+    padding-top: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.vtf-discription {
+    height: 80%;
+    width: 80%;
+    background-color: azure;
+}
+.owasp-exp {
+    height: 400px;
+    width: 400px;
+    margin-left: 72%;
+}
+.owasp-img {
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.owasp-border {
+    height: 3px;
+    width: 350px;
+    background-color: blue;
+    position: sticky;
+}
+.owasp-head {
+    height: 100px;
+    padding: 0px;
+    align-items: center;
+    width: 350px;
+    margin-top: 0px;
+    margin-left: 30px;
+    background-color: rgb(52, 45, 45);
+}
+.owasp-title {
+    align-self: center;
+    margin-left: 40px;
+    padding-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+.owasp-location {
+    margin-left: 250px;
+    padding-top: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.owasp-role {
+    margin-left: 40px;
+    padding-top: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.h1-exp {
+    height: 400px;
+    width: 400px;
+    margin-left: 42%;
+}
+.h1-img {
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.h1-border {
+    height: 3px;
+    width: 350px;
+    background-color: purple;
+    position: sticky;
+}
+.h1-head {
+    height: 100px;
+    padding: 0px;
+    align-items: center;
+    width: 350px;
+    margin-top: 0px;
+    margin-left: 30px;
+    background-color: rgb(52, 45, 45);
+}
+.h1-title {
+    align-self: center;
+    margin-left: 50px;
+    padding-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+.h1-location {
+    margin-left: 250px;
+    padding-top: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.h1-role {
+    margin-left: 50px;
+    padding-top: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
