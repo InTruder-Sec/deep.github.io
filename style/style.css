@@ -1,353 +1,617 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
-::-moz-selection { /* Code for Firefox */
-    color: white;
-    background: red;
-  }
-  
-  ::selection {
-    color: white;
-    background: red;
-  }
-body{
-    color: whitesmoke;
-    background-color: #151515;
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: red;
+}
+
+::selection {
+  color: white;
+  background: red;
+}
+body {
+  color: whitesmoke;
+  cursor: default;
+  background-color: #151515;
 }
 .Header {
-    position: -webkit-sticky;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 1;
+  z-index: 1;
+  background-color: #151515;
 }
 
 .page {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
-ul {
-    list-style: none;
+head-list {
+  list-style: none;
 }
 li {
-    display: inline-block;
-    padding: 15px;
+  display: inline-block;
+  padding: 15px;
 }
 .contents {
-    align-self: flex-end;
-    position: relative;
-    margin-top: 10px;
-    width: fit-content;
-    margin-left: 65%;
-    font-weight: 500;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  align-self: flex-end;
+  position: relative;
+  margin-top: 10px;
+  width: fit-content;
+  margin-left: 65%;
+  font-weight: 500;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 a {
-    color: azure;
-    text-decoration: none;
+  color: azure;
+  text-decoration: none;
 }
 .about-effect {
-    width: 55px;
-    height: 5px;
-    left: 50%;
-    top: 0%;
-    background-color: rgb(231, 38, 38);
+  width: 55px;
+  height: 5px;
+  left: 50%;
+  top: 0%;
+  background-color: rgb(231, 38, 38);
 }
 
 .experience-effect {
-    width: 92px;
-    height: 5px;
-    left: 50%;
-    top: 0%;
+  width: 92px;
+  height: 5px;
+  left: 50%;
+  top: 0%;
 
-    background-color: blueviolet;
+  background-color: blueviolet;
 }
 .projects-effect {
-    width: 75px;
-    height: 5px;
-    left: 50%;
-    top: 0%;
+  width: 75px;
+  height: 5px;
+  left: 50%;
+  top: 0%;
 
-    background-color: rgb(53, 161, 194);
+  background-color: rgb(53, 161, 194);
 }
 .socials-effect {
-    width: 65px;
-    height: 5px;
-    left: 50%;
-    top: 0%;
-    background-color: rgb(210, 144, 44);
+  width: 65px;
+  height: 5px;
+  left: 50%;
+  top: 0%;
+  background-color: rgb(210, 144, 44);
 }
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap");
 
 .intro {
-    padding: 30px;
-    margin-top: 60px;
-    margin-left: 160px;
+  padding: 30px;
+  margin-top: 150px;
+  margin-left: 160px;
 }
 .intro-content {
-    position: absolute;
-    display: inline-block;
-    padding-left: 20px;
-    letter-spacing: 1px;
-    font-size: 21px;
-    font-weight: 100;
-    font-family: 'Source Code Pro', monospace;
+  position: absolute;
+  display: inline-block;
+  padding-left: 20px;
+  letter-spacing: 1px;
+  font-size: 21px;
+  font-weight: 100;
+  font-family: "Source Code Pro", monospace;
 }
 .intro-content2 {
-    position: absolute;
-    display: inline;
-    padding-left: 20px;
-    margin-top: 55px;
-    font-weight: 300;
-    color: #dd3737;
-    letter-spacing: 2px;
-    font-size: small;
-    font-family: 'Source Code Pro', monospace;
+  position: absolute;
+  display: inline;
+  padding-left: 20px;
+  margin-top: 55px;
+  font-weight: 300;
+  color: #dd3737;
+  letter-spacing: 2px;
+  font-size: small;
+  font-family: "Source Code Pro", monospace;
 }
-
 
 .intro-content3 {
-    position: absolute;
-    display: inline;
-    padding-left: 20px;
-    margin-top: 50px;
-    font-family: 'Source Code Pro', monospace;
-    font-size: 30px;
-    font-weight: 100;
-    text-transform: uppercase;
+  position: absolute;
+  display: inline;
+  padding-left: 20px;
+  margin-top: 50px;
+  font-family: "Source Code Pro", monospace;
+  font-size: 30px;
+  font-weight: 100;
+  text-transform: uppercase;
 }
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 .intro-content4 {
-    position: absolute;
-    display: inline;
-    padding-left: 20px;
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 150px;
-    font-size: 18px;
-    font-weight: 100;
+  position: absolute;
+  display: inline;
+  padding-left: 20px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 150px;
+  font-size: 18px;
+  font-weight: 100;
 }
 
 .contact-us {
-    background-color: #dd3737;
-    border-width: 0px;
-    color: whitesmoke;
-    height: 50px;
-    width: 140px;
-    font-size: 15px;
-    letter-spacing: 2px;
-    border-radius: 4px;
-    position: absolute;
-    margin-left: 20px;
-    transition: 0.6s;
-    margin-top: 200px;
+  background-color: #dd3737;
+  border-width: 0px;
+  color: whitesmoke;
+  height: 50px;
+  width: 140px;
+  font-size: 15px;
+  letter-spacing: 2px;
+  border-radius: 4px;
+  position: absolute;
+  margin-left: 20px;
+  transition: 0.6s;
+  margin-top: 200px;
 }
 .contact-us:hover {
-    background-color: #d5b019;
+  background-color: #d5b019;
 }
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 .about-head {
-    font-size: 150px;
-    color: black;
-    margin-left: 250px;
-    margin-top: 100px;
-    text-transform: uppercase;
-    font-family: 'Source Code Pro', monospace;
+  font-size: 150px;
+  color: black;
+  margin-left: 250px;
+  margin-top: 100px;
+  text-transform: uppercase;
+  font-family: "Source Code Pro", monospace;
 }
 .about-me {
-    position: absolute;
-    margin-top: 110px;
-    font-size: 50px;
-    margin-left: 230px;
-    font-family: 'Source Code Pro', monospace;
+  position: absolute;
+  margin-top: 110px;
+  font-size: 50px;
+  margin-left: 230px;
+  font-family: "Source Code Pro", monospace;
 }
 .about-content1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    margin-top: 70px;
-    margin-left: 350px;
-    width: 800px;
-    font-weight: 400;
-    color: whitesmoke;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  margin-top: 70px;
+  margin-left: 350px;
+  width: 800px;
+  font-weight: 400;
+  color: whitesmoke;
 }
 .socials-button {
-    background-color: #dd3737;
-    border-width: 0px;
-    color: whitesmoke;
-    height: 50px;
-    width: 140px;
-    font-size: 15px;
-    letter-spacing: 2px;
-    border-radius: 4px;
-    position: absolute;
-    transition: 0.6s;
-    margin-top: 40px;
+  background-color: #dd3737;
+  border-width: 0px;
+  color: whitesmoke;
+  height: 50px;
+  width: 140px;
+  font-size: 15px;
+  letter-spacing: 2px;
+  border-radius: 4px;
+  position: absolute;
+  transition: 0.6s;
+  margin-top: 40px;
 }
 .socials-button:hover {
-    background-color: #d5b019;
+  background-color: #d5b019;
 }
 .title-experience {
-    font-size: 150px;
-    color: black;
-    margin-left: 250px;
-    margin-top: 200px;
-    text-transform: uppercase;
-    font-family: 'Source Code Pro', monospace;
+  font-size: 150px;
+  color: black;
+  margin-left: 250px;
+  margin-top: 200px;
+  text-transform: uppercase;
+  font-family: "Source Code Pro", monospace;
 }
 .experience-head {
-    position: absolute;
-    margin-top: 110px;
-    font-size: 50px;
-    margin-left: 230px;
-    font-family: 'Source Code Pro', monospace;
+  position: absolute;
+  margin-top: 110px;
+  font-size: 50px;
+  margin-left: 230px;
+  font-family: "Source Code Pro", monospace;
 }
 .vtf-exp {
-    height: 400px;
-    width: 400px;
-    margin-left: 42%;
-    margin-top: 130px;
+  height: 400px;
+  width: 400px;
+  margin-left: 42%;
+  margin-top: 130px;
 }
 .vtf-img {
-    margin-left: 50px;
-    margin-top: 10px;
+  margin-left: 50px;
+  margin-top: 10px;
 }
 .vtf-border {
-    height: 3px;
-    width: 350px;
-    background-color: red;
-    position: sticky;
+  height: 3px;
+  width: 350px;
+  background-color: red;
+  position: sticky;
 }
 .vtf-head {
-    height: 100px;
-    padding: 0px;
-    align-items: center;
-    width: 350px;
-    margin-top: 0px;
-    margin-left: 30px;
-    background-color: rgb(52, 45, 45);
+  height: 100px;
+  padding: 0px;
+  align-items: center;
+  width: 350px;
+  margin-top: 0px;
+  margin-left: 30px;
+  background-color: rgb(52, 45, 45);
 }
 .vtf-title {
-    align-self: center;
-    margin-left: 15px;
-    padding-top: 10px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    font-weight: 600;
+  align-self: center;
+  margin-left: 15px;
+  padding-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
 }
 .vtf-location {
-    margin-left: 250px;
-    padding-top: 8px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+  margin-left: 250px;
+  padding-top: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 .vtf-role {
-    margin-left: 15px;
-    padding-top: 8px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
+  margin-left: 15px;
+  padding-top: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-.vtf-discription {
-    height: 80%;
-    width: 80%;
-    background-color: azure;
-}
 .owasp-exp {
-    height: 400px;
-    width: 400px;
-    margin-left: 72%;
+  height: 400px;
+  width: 400px;
+  margin-left: 72%;
 }
 .owasp-img {
-    margin-left: 50px;
-    margin-top: 10px;
+  margin-left: 50px;
+  margin-top: 10px;
 }
 .owasp-border {
-    height: 3px;
-    width: 350px;
-    background-color: blue;
-    position: sticky;
+  height: 3px;
+  width: 350px;
+  background-color: blue;
+  position: sticky;
 }
 .owasp-head {
-    height: 100px;
-    padding: 0px;
-    align-items: center;
-    width: 350px;
-    margin-top: 0px;
-    margin-left: 30px;
-    background-color: rgb(52, 45, 45);
+  height: 100px;
+  padding: 0px;
+  align-items: center;
+  width: 350px;
+  margin-top: 0px;
+  margin-left: 30px;
+  background-color: rgb(52, 45, 45);
 }
 .owasp-title {
-    align-self: center;
-    margin-left: 40px;
-    padding-top: 10px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    font-weight: 600;
+  align-self: center;
+  margin-left: 40px;
+  padding-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
 }
 .owasp-location {
-    margin-left: 250px;
-    padding-top: 8px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+  margin-left: 250px;
+  padding-top: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 .owasp-role {
-    margin-left: 40px;
-    padding-top: 8px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
+  margin-left: 40px;
+  padding-top: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 .h1-exp {
-    height: 400px;
-    width: 400px;
-    margin-left: 42%;
+  height: 400px;
+  width: 400px;
+  margin-left: 42%;
 }
 .h1-img {
-    margin-left: 50px;
-    margin-top: 10px;
+  margin-left: 50px;
+  margin-top: 10px;
 }
 .h1-border {
-    height: 3px;
-    width: 350px;
-    background-color: purple;
-    position: sticky;
+  height: 3px;
+  width: 350px;
+  background-color: purple;
+  position: sticky;
 }
 .h1-head {
-    height: 100px;
-    padding: 0px;
-    align-items: center;
-    width: 350px;
-    margin-top: 0px;
-    margin-left: 30px;
-    background-color: rgb(52, 45, 45);
+  height: 100px;
+  padding: 0px;
+  align-items: center;
+  width: 350px;
+  margin-top: 0px;
+  margin-left: 30px;
+  background-color: rgb(52, 45, 45);
 }
 .h1-title {
-    align-self: center;
-    margin-left: 50px;
-    padding-top: 10px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    font-weight: 600;
+  align-self: center;
+  margin-left: 50px;
+  padding-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
 }
 .h1-location {
-    margin-left: 250px;
-    padding-top: 8px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+  margin-left: 250px;
+  padding-top: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 .h1-role {
-    margin-left: 50px;
-    padding-top: 8px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    font-weight: 700;
+  margin-left: 50px;
+  padding-top: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.vtf-discription {
+    margin: auto;
+    width: 80%;
+}
+.vtf-modal-open {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    transition-duration: 0.6s;
+    width: 100%; /* Full width */
+    height: 80%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background: none;
+}
+.modal-content {
+    color: #000;
+    background-color: white;
+    height: 500px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.vtf-1 {
+    display: inline;
+    margin-top: 50px;
+    font-family: "Source Code Pro", monospace;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 600;
+    margin-left: 550px;
+    position: absolute;
+}
+.vtf-img2 {
+    display: inline;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+}
+.vtf2 {
+    color: #000;
+    margin-left: 550px;
+    display: inline;
+    position: absolute;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-top: 130px;
+    letter-spacing: 1.5px;
+}
+.vtf3 {
+    color: #000;
+    display: inline;
+    position: absolute;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 900px;
+    margin-top: 130px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase
+}
+.vtf4 {
+    color: #000;
+    margin-left: 550px;
+    display: inline;
+    position: absolute;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-top: 160px;
+    letter-spacing: 1.5px;
+}
+.vtf5 {
+    color: #000;
+    margin-left: 550px;
+    display: inline;
+    position: absolute;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    width: 600px;
+    margin-top: 210px;
+    letter-spacing: 1.5px;
+}
+.vtf-list {
+    list-style: disc;
+}
+
+.navigation-terminal {
+  height: 50px;
+  background-color: rgb(200, 200, 200);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.close,
+.small,
+.min {
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  margin-top: 15px;
+  background-color: #000000;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded&family=Oleo+Script+Swash+Caps&display=swap');
+.close {
+    margin-left: 10px;
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    color: #000000;
+    background-color: #ff605c;
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+  }
+.small{
+  margin-left: 40px;
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+  color: #000000;
+  background-color: #FFBD44;
+}
+.min {
+  margin-left: 70px;
+  position: absolute;
+  padding-top: 2px;
+  text-align:center;
+  display: inline-block;
+  color: #000000;
+  background-color: #00CA4E;
+}
+
+.owasp-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  transition-duration: 0.6s;
+  width: 80%;
+  padding-left: 150px;
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background: none;
+}
+.owasp-content {
+  color: #000;
+  background-color: white;
+  height: 500px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.owasp-1 {
+  display: inline;
+  margin-top: 50px;
+  font-family: "Source Code Pro", monospace;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 600;
+  margin-left: 550px;
+  position: absolute;
+}
+.owasp-img2 {
+  display: inline;
+  position: absolute;
+}
+.owasp2 {
+  color: #000;
+  margin-left: 550px;
+  display: inline;
+  position: absolute;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 130px;
+  letter-spacing: 1.5px;
+}
+.owasp3 {
+  color: #000;
+  display: inline;
+  position: absolute;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 900px;
+  margin-top: 130px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase
+}
+.owasp4 {
+  color: #000;
+  margin-left: 550px;
+  display: inline;
+  position: absolute;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 160px;
+  letter-spacing: 1.5px;
+}
+.owasp5 {
+  color: #000;
+  margin-left: 550px;
+  display: inline;
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  width: 600px;
+  margin-top: 210px;
+  letter-spacing: 1.5px;
+}
+.owasp-list {
+  list-style: disc;
+}
+
+
+.new_close,
+.new_small,
+.new_min {
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  margin-top: 15px;
+  background-color: #000000;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded&family=Oleo+Script+Swash+Caps&display=swap');
+.new_close {
+    margin-left: 10px;
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    color: #000000;
+    background-color: #ff605c;
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+  }
+.new_small{
+  margin-left: 40px;
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+  color: #000000;
+  background-color: #FFBD44;
+}
+.new_min {
+  margin-left: 70px;
+  position: absolute;
+  padding-top: 2px;
+  text-align:center;
+  display: inline-block;
+  color: #000000;
+  background-color: #00CA4E;
 }
