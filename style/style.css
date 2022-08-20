@@ -41,7 +41,7 @@ li {
   position: relative;
   margin-top: 10px;
   width: fit-content;
-  margin-left: 65%;
+  margin-left: 58%;
   font-weight: 500;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -56,6 +56,14 @@ a {
   left: 50%;
   top: 0%;
   background-color: rgb(231, 38, 38);
+}
+
+.skills-effect {
+  width: 48px;
+  height: 5px;
+  left: 50%;
+  top: 0%;
+  background-color: rgb(89, 86, 116);
 }
 
 .experience-effect {
@@ -391,8 +399,7 @@ a {
 .vtf-img2 {
     display: inline;
     position: absolute;
-    width: fit-content;
-    height: fit-content;
+    padding: 30px;
 }
 .vtf2 {
     color: #000;
@@ -614,4 +621,316 @@ a {
   display: inline-block;
   color: #000000;
   background-color: #00CA4E;
+}
+
+.h1-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  transition-duration: 0.6s;
+  width: 80%;
+  padding-left: 150px;
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background: none;
+}
+.h1-content {
+  color: #000;
+  background-color: white;
+  height: 500px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.h1-1 {
+  display: inline;
+  margin-top: 50px;
+  font-family: "Source Code Pro", monospace;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 600;
+  margin-left: 550px;
+  position: absolute;
+}
+.h1-img2 {
+  display: inline;
+  position: absolute;
+}
+.h12 {
+  color: #000;
+  margin-left: 550px;
+  display: inline;
+  position: absolute;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 130px;
+  letter-spacing: 1.5px;
+}
+.h13 {
+  color: #000;
+  display: inline;
+  position: absolute;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 900px;
+  margin-top: 130px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase
+}
+.h14 {
+  color: #000;
+  margin-left: 550px;
+  display: inline;
+  position: absolute;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 160px;
+  letter-spacing: 1.5px;
+}
+.h15 {
+  color: #000;
+  margin-left: 550px;
+  display: inline;
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  width: 600px;
+  margin-top: 210px;
+  letter-spacing: 1.5px;
+}
+.h1-list {
+  list-style: disc;
+}
+
+
+.new1_close,
+.new1_small,
+.new1_min {
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  margin-top: 15px;
+  background-color: #000000;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded&family=Oleo+Script+Swash+Caps&display=swap');
+.new1_close {
+    margin-left: 10px;
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    color: #000000;
+    background-color: #ff605c;
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+  }
+.new1_small{
+  margin-left: 40px;
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+  color: #000000;
+  background-color: #FFBD44;
+}
+.new1_min {
+  margin-left: 70px;
+  position: absolute;
+  padding-top: 2px;
+  text-align:center;
+  display: inline-block;
+  color: #000000;
+  background-color: #00CA4E;
+}
+
+.skills-intro {
+  font-size: 150px;
+  color: black;
+  margin-left: 250px;
+  margin-top: 200px;
+  text-transform: uppercase;
+  font-family: "Source Code Pro", monospace;
+}
+.skills-head {
+  position: absolute;
+  margin-top: 310px;
+  font-size: 50px;
+  margin-left: 230px;
+  font-family: "Source Code Pro", monospace;
+}
+.skill-j {
+  font-size: 25px;
+  font-family: "Source Code Pro", monospace;
+  padding-top: 80px;
+  font-weight: 600;
+  padding-left: 200px;
+}
+.time-line-1 {
+  font-size: 18px;
+  font-family: "Source Code Pro", monospace;
+  padding-top: 80px;
+  margin-left: 300px;
+}
+.timeline {
+  width: 140px;
+  rotate: 90deg;
+  margin-left: 270px;
+  display: inline;
+  z-index: 1;
+  position: absolute;
+  margin-top: 55px;
+}
+.tab1 {
+  width: 300px;
+  height: 80px;
+  margin-top: 20px;
+  margin-left: 380px;
+  background-color: rgb(52, 45, 45);
+
+}
+.level1 {
+  height: 80px;
+  width: 300px;
+  display: inline-block;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 1000px;
+  background-color: rgb(52, 45, 45);
+  
+} 
+.level2 {
+  height: 80px;
+  width: 300px;
+  display: inline-block;
+  position: absolute;
+  margin-top: 220px;
+  margin-left: 1000px;
+  background-color: rgb(52, 45, 45);
+  
+}
+.level3 {
+  height: 80px;
+  width: 300px;
+  display: inline-block;
+  position: absolute;
+  margin-top: 340px;
+  margin-left: 1000px;
+  background-color: rgb(52, 45, 45);
+  
+}
+.level4 {
+  height: 80px;
+  width: 300px;
+  display: inline-block;
+  position: absolute;
+  margin-top: 460px;
+  margin-left: 1000px;
+  background-color: rgb(52, 45, 45);
+  
+}
+.label-red {
+  width: 6px;
+  height: 80px;
+  position: absolute;
+  display: inline-block;
+  background-color: #dd3737;
+}
+.label-yellow {
+  width: 6px;
+  height: 80px;
+  position: absolute;
+  display: inline-block;
+  background-color: yellow;
+}
+.label-green {
+  width: 6px;
+  height: 80px;
+  position: absolute;
+  display: inline-block;
+  background-color: greenyellow;
+}
+.label-blue {
+  width: 6px;
+  height: 80px;
+  position: absolute;
+  display: inline-block;
+  background-color: blue;
+}
+.skill-discription {
+  font-size: 20px;
+  position: absolute;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 300;
+  width: 280px;
+  margin-top: 25px;
+  margin-left: 30px;
+  text-transform: uppercase;
+  transition: 0.6s;
+}
+.skill-discription:hover {
+  color: #dd3737;
+}
+.skill-discription2 {
+  font-size: 20px;
+  position: absolute;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 300;
+  width: 280px;
+  margin-top: 15px;
+  margin-left: 30px;
+  text-transform: uppercase;
+  transition: 0.6s;
+}
+.skill-discription2:hover {
+  color: #dd3737;
+}
+.category-level {
+  display: inline-block;
+  position: absolute;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 600;
+  font-size: 25px;
+  margin-left: 960px;
+  margin-top: 0px;
+}
+.time-line-2 {
+  font-size: 18px;
+  font-family: "Source Code Pro", monospace;
+  padding-top: 40px;
+  margin-left: 300px;
+}
+.end-timeline {
+  width: 200px;
+  margin-left: 340px;
+  margin-top: 27px;
+  opacity: 0.5;
+}
+.end-timeline2 {
+  rotate: 90deg;
+  width: 20px;
+  margin-top: 10px;
+  margin-left: 530px;
+  opacity: 0.5;
+}
+
+.project-intro {
+  font-size: 150px;
+  color: black;
+  margin-left: 250px;
+  margin-top: 150px;
+  text-transform: uppercase;
+  font-family: "Source Code Pro", monospace;
+}
+.project-head {
+  position: absolute;
+  margin-top: 260px;
+  font-size: 50px;
+  margin-left: 230px;
+  font-family: "Source Code Pro", monospace;
 }
