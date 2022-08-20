@@ -22,13 +22,16 @@
                     <li><a href="/#experience" class="experience">EXPERIENCE</a><br>
                         <div class="experience-effect"></div>
                     </li>
+                    <li><a href="/#skills-head" class="skills">SKILLS</a><br>
+                        <div class="skills-effect"></div>
+                    </li>
                     <li><a href="#About" class="projects">PROJECTS</a><br>
                         <div class="projects-effect"></div>
                     </li>
                     <li><a href="#About" class="socials">SOCIALS</a><br>
                         <div class="socials-effect"></div>
                     </li>
-
+                        
                 </ul>
             </div>
         </nav>
@@ -109,16 +112,16 @@
                     <div class="modal-content">
                         
                         <div class="owasp-img2"><img src="./src/owasp-img.jpg" height="300px" style="padding: 80px;" alt="OWASP image"></div>
-                        <div class="owasp-1"><u>Virtual Testing Foundation</u></div>
-                        <div class="owasp2">Cyber Security Intern</div><div class="owasp3">JAN 18 2021 - MAR 18 2021</div>
-                        <div class="owasp4">Remote</div>
+                        <div class="owasp-1"><u>OWASP Chapter PCCOE</u></div>
+                        <div class="owasp2">Security & CTF Team Lead</div><div class="owasp3">JULY 25 2021 - CURRENT</div>
+                        <div class="owasp4">PCCOE</div>
                         <div class="owasp5">
-                            VTF is a California, USA based 501(c)3 nonprofit volunteer-run organization. Over the internship period I have completed,<br>
+                            The Open Web Application Security Project® (OWASP) is a nonprofit foundation that works to improve the security of software. Being a part of Security & CTF Team, my responsibilites are,<br>
                             <ul class="owasp-list">
-                                <li>●  Kube Academy Courses</li><br>
-                                <li>●  Hands-on lab learning</li><br>
-                                <li>●  Digital and social media marketing</li><br>
-                                <li>●  Captured minutes of meeting and had team collaborations</li><br>
+                                <li>●  Organize Tech-talks</li><br>
+                                <li>●  Lead University CTF Team</li><br>
+                                <li>●  Organize Security Workshops & Bootcamps</li><br>
+                                <li>●  Create Awareness Regarding Security Domain</li><br>
                             </ul>
                         </div>
                     </div>
@@ -133,8 +136,32 @@
                     <div class="owasp-role">Head of Security Team</div>
                 </div>
             </div>
-
-            <div class="h1-exp" onmouseover="displayhacker()" onmouseout="out()">
+            <div class="h1-modal" id="h1-modal">
+                <div id="h1-discription" class="h1-discription">
+                    <div class="navigation-terminal">
+                        <div class="new1_close" onclick="closeM()" onmouseover="new1_funClose()" onmouseout="remove()" id="new1_close"></div>
+                        <div class="new1_small" onclick="closeM()" onmouseover="new1_funSmall()" onmouseout="remove()" id="new1_small"></div>
+                        <div class="new1_min" onclick="closeM()" onmouseover="new1_funMin()" onmouseout="remove()" id="new1_min"></div>
+                    </div>
+                    <div class="modal-content">
+                        
+                        <div class="h1-img2"><img src="./src/h1.png" height="300px" style="padding: 80px;" alt="OWASP image"></div>
+                        <div class="h1-1"><u>H@ctivitycon-2021 Rank 45th</u></div>
+                        <div class="h12">CTF Team Lead</div><div class="owasp3">SEPT 17 2021 - SEPT 19 2021</div>
+                        <div class="h14">REMOTE</div>
+                        <div class="h15">
+                            H@ctivitycon is a HackerOne hosted hacker conference built by the community for the community. We scored 5527 points and stood 45th all over world. We PWNed the following catagories,<br>
+                            <ul class="h1-list">
+                                <li>●  Forensics, OSINT</li><br>
+                                <li>●  Web Vulnerabilities</li><br>
+                                <li>●  Cryptography, Reverse Engineering</li><br>
+                                <li>●  Mobile App Vulnerabilities</li><br>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h1-exp" onclick="h1Discription()" onmouseover="displayhacker()" onmouseout="out()">
                 <img src="./src/h1.jpg" class="h1-img" height="350px" width="350px" alt="Hacker One">
                 <div class="h1-head" id="h1-head">
                     <div class="h1-border"></div>
@@ -144,8 +171,136 @@
                 </div>
             </div>
         </div>
+        <div class="skills-head" id="skills-head">
+            My Skills
+        </div>
+        <div class="skills-intro">
+            SKILLS
+        </div>
+        <div class="skill-j">
+            My Jorneny
+        </div>
+        <div class="category-level">Experience Colour</div>
+        
+        <div class="level1">
+            <div class="label-red"></div>
+            <div class="skill-discription">P1 - [10] critical</div>
+        </div>
+        <div class="level2">
+            <div class="label-blue"></div>
+            <div class="skill-discription">P2 - [7-9] High</div>
+        </div>
+        <div class="level3">
+            <div class="label-yellow"></div>
+            <div class="skill-discription">P3 - [4-7] Medium</div>
+        </div>
+        <div class="level4">
+            <div class="label-green"></div>
+            <div class="skill-discription">P4  - [1-4] Low</div>
+        </div>
+        <div class="time-line-1">
+            MAR 2019
+        </div><br>
+        <hr class="timeline">
+        <div class="tab1">
+            <div class="label-red"></div>
+            <div class="skill-discription">HTML5 & CSS</div>
+        </div>
+
+        <hr class="timeline">
+        <div class="tab1">
+            <div class="label-blue"></div>
+            <div class="skill-discription">Javascript</div>
+        </div>
+        <div class="time-line-2">
+            JAN 2020
+        </div><br>
+        <hr class="timeline">
+        <div class="tab1">
+            <div class="label-blue"></div>
+            <div class="skill-discription">LINUX Terminal</div>
+        </div>
+        <hr class="timeline">
+        <div class="tab1">
+            <div class="label-green"></div>
+            <div class="skill-discription">C++</div>
+        </div>
+        <div class="time-line-2">
+            MAR 2020
+        </div><br>
+        <hr class="timeline">
+        <div class="tab1">
+            <div class="label-red"></div>
+            <div class="skill-discription">Metasploit Framework</div>
+        </div>
+        <div class="time-line-2">
+            OCT 2020
+        </div><br>
+        <hr class="timeline">
+        <div class="tab1">
+            <div class="label-red"></div>
+            <div class="skill-discription2">OWASP TOP 10 Web Vulnerabilities</div>
+        </div>
+        <div class="time-line-2">
+            JAN 2021
+        </div><br>
+        <hr class="timeline">
+        <div class="tab1">
+            <div class="label-blue"></div>
+            <div class="skill-discription">Ethical Hacking</div>
+        </div>
+        <div class="time-line-2">
+            APRIL 2021
+        </div><br>
+        <hr class="timeline">
+        <div class="tab1">
+            <div class="label-yellow"></div>
+            <div class="skill-discription">My-SQL</div>
+        </div>
+        <hr class="timeline">
+        <div class="tab1">
+            <div class="label-green"></div>
+            <div class="skill-discription">Network Security</div>
+        </div>
+
+        <div class="time-line-2">
+            MAY 2022
+        </div><br>
+        <hr class="timeline">
+        <div class="tab1">
+            <div class="label-blue"></div>
+            <div class="skill-discription">REACT</div>
+        </div>
+        <div class="time-line-2">
+            AUG 2022
+        </div><br>
+        <hr class="timeline">
+        <div class="tab1">
+            <div class="label-yellow"></div>
+            <div class="skill-discription">Django Framework</div>
+        </div>
+        <hr class="timeline">
+        <div class="tab1">
+            <div class="label-blue"></div>
+            <div class="skill-discription">Figma</div>
+        </div>
+        <hr class="end-timeline">
+        <hr class="end-timeline2">
+        <div class="project-head" id="cert-head">
+            My Projects
+        </div>
+        <div class="project-intro">
+            projects
+        </div>
+        
     </div>
-    <br><br><br><br><br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
 </body>
 
 </html>
