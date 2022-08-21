@@ -1,3 +1,7 @@
+* {
+  margin: 0%;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -109,7 +113,7 @@ a {
   position: absolute;
   display: inline;
   padding-left: 20px;
-  margin-top: 55px;
+  margin-top: 30px;
   font-weight: 300;
   color: #dd3737;
   letter-spacing: 2px;
@@ -933,4 +937,308 @@ a {
   font-size: 50px;
   margin-left: 230px;
   font-family: "Source Code Pro", monospace;
+}
+.pro-no {
+  color: #dd3737;
+  font-family: "Source Code Pro", monospace;
+  font-size: 20px;
+  margin-left: 300px;
+  margin-top: 120px;
+}
+.pro-img {
+  margin-left: 170px;
+  display: inline;
+  position: absolute;
+}
+.pro-head {
+  font-family: "Source Code Pro", monospace;
+  font-size: 30px;
+  margin-left: 300px;
+}
+
+.pro-subhead {
+  font-family: "Source Code Pro", monospace;
+  font-size: 18px;
+  margin-left: 300px;
+  transition: 0.8s;
+  margin-top: 60px;
+  position: absolute;
+  display: inline;
+}
+.pro-subhead:hover {
+  color: aqua;
+}
+
+.pro-subhead2 {
+  font-family: "Source Code Pro", monospace;
+  font-size: 18px;
+  margin-left: 750px;
+  margin-top: 60px;
+  position: absolute;
+  transition: 0.8s;
+  display: inline;
+}
+.pro-subhead2:hover {
+  color: aqua;
+}
+
+.pro-subhead3 {
+  font-family: "Source Code Pro", monospace;
+  font-size: 18px;
+  margin-left: 1150px;
+  margin-top: 60px;
+  position: absolute;
+  transition: 0.8s;
+  display: inline;
+}
+.pro-subhead3:hover {
+  color: aqua;
+}
+
+.pro-discription {
+  font-family: "Source Code Pro", monospace;
+  font-size: 18px;
+  margin-top: 120px;
+  margin-left: 300px;
+  width: 350px;
+  position: absolute;
+  display: inline;
+}
+.pro-link {
+  font-family: "Source Code Pro", monospace;
+  font-size: 18px;
+  margin-left: 750px;
+  margin-top: 120px;
+  width: 300px;
+  position: absolute;
+  display: inline;
+  transition: 1s;
+}
+
+.pro-link:hover + link-text{
+  color: red;
+}
+
+.pro-tech {
+  font-family: "Source Code Pro", monospace;
+  font-size: 18px;
+  display: inline;
+  position: absolute;
+  margin-left: 1150px;
+  margin-top: 120px;
+}
+.project-div2 {
+  margin-top: 400px;
+}
+.project-div3 {
+  margin-top: 400px;
+}
+
+.socials-intro {
+  font-size: 150px;
+  color: black;
+  margin-left: 250px;
+  margin-top: 390px;
+  text-transform: uppercase;
+  font-family: "Source Code Pro", monospace;
+}
+.socials-head {
+  position: absolute;
+  margin-top: 500px;
+  font-size: 50px;
+  margin-left: 230px;
+  font-family: "Source Code Pro", monospace;
+} 
+.social-display{
+  font-family: "Source Code Pro", monospace;
+  font-size: 22px;
+  margin-left: 200px;
+  margin-top: 100px;
+}
+
+.mail {
+  width: 300px;
+  height: 80px;
+  margin-top: 50px;
+  margin-left: 280px;
+  position: absolute;
+  display: inline;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: rgb(52, 45, 45);
+}
+
+.label-mail {
+  width: 6px;
+  height: 80px;
+  position: absolute;
+  display: inline-block;
+  background-color: #4285f4;
+}
+.svg-icon {
+  height: 30px;
+  width: 30px;
+  display: inline;
+  position: absolute;
+}
+.mail-discription {
+  font-size: 20px;
+  position: absolute;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 300;
+  width: 280px;
+  margin-top: 3px;
+  margin-left: 50px;
+  text-transform: uppercase;
+  transition: 0.6s;
+}
+.mail-discription:hover {
+  color: #4285f4;
+}
+.mail-link {
+  width: 300px;
+}
+
+
+.inst {
+  width: 300px;
+  height: 80px;
+  margin-top: 50px;
+  margin-left: 680px;
+  position: absolute;
+  display: inline;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: rgb(52, 45, 45);
+}
+
+.inst-mail {
+  width: 6px;
+  height: 80px;
+  position: absolute;
+  display: inline-block;
+  background-color: #dd2a7b;
+}
+.inst-icon {
+  height: 30px;
+  width: 30px;
+  display: inline;
+  position: absolute;
+  top: 12px;
+}
+.inst-discription {
+  font-size: 20px;
+  position: absolute;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 300;
+  width: 280px;
+  margin-top: 15px;
+  margin-left: 50px;
+  text-transform: uppercase;
+  transition: 0.6s;
+}
+.inst-discription:hover {
+  color: #dd2a7b;
+}
+.inst-link {
+  width: 300px;
+}
+.git {
+  width: 300px;
+  height: 80px;
+  margin-top: 50px;
+  margin-left: 1080px;
+  position: absolute;
+  display: inline;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: rgb(52, 45, 45);
+}
+
+.git-icon {
+  height: 30px;
+  width: 30px;
+  display: inline;
+  position: absolute;
+  top: 12px;
+}
+.git-discription {
+  font-size: 20px;
+  position: absolute;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 300;
+  width: 280px;
+  margin-top: 5px;
+  margin-left: 50px;
+  text-transform: uppercase;
+  transition: 0.6s;
+}
+
+.label-git {
+  width: 6px;
+  height: 80px;
+  position: absolute;
+  display: inline-block;
+  background-color: rgba(157, 157, 157, 0.267);
+}
+
+.git-discription:hover {
+  color: rgba(157, 157, 157, 0.267);
+}
+.git-link {
+  width: 300px;
+}
+
+.yt {
+  width: 300px;
+  height: 80px;
+  margin-top: 200px;
+  margin-left: 280px;
+  position: absolute;
+  display: inline;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: rgb(52, 45, 45);
+}
+
+.label-yt {
+  width: 6px;
+  height: 80px;
+  position: absolute;
+  display: inline-block;
+  background-color: red;
+}
+.svg-icon {
+  height: 30px;
+  width: 30px;
+  display: inline;
+  position: absolute;
+}
+.yt-discription {
+  font-size: 20px;
+  position: absolute;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 300;
+  width: 280px;
+  margin-top: 3px;
+  margin-left: 50px;
+  text-transform: uppercase;
+  transition: 0.6s;
+}
+.yt-discription:hover {
+  color: red;
+}
+.yt-link {
+  width: 300px;
+}
+.foot {
+  width: 100%;
+  height: 30px;
+  background-color: whitesmoke;
+  margin-top: 400px;
+  text-align: center;
+  color: #000000;
+  padding-top: 15px;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 300;
 }
