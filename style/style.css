@@ -6,7 +6,6 @@ html {
   scroll-behavior: smooth;
 }
 ::-moz-selection {
-  /* Code for Firefox */
   color: white;
   background: red;
 }
@@ -20,32 +19,142 @@ body {
   cursor: default;
   background-color: #151515;
 }
-.Header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  opacity: 1;
+
+.header-hb {
+  display: none;
+  margin-left: 100%;
+  margin-top: 0px;
   z-index: 1;
-  background-color: #151515;
 }
 
+.Header {
+  width: 100%;
+  background-color: #151515;
+  height: 80px;
+  display: block;
+  top: 0;
+  z-index: 1;
+  position: fixed;
+}
+
+
+@media screen and (max-width: 1380px) {
+  .logo-con {
+    width: 55% !important;
+  } 
+  .vtf-exp {
+    margin-left: 23% !important;
+  }
+  .owasp-exp {
+    margin-left: 60% !important;
+  }
+  .h1-exp {
+    margin-left: 23% !important;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .logo-con {
+    width: 40% !important;
+  }
+  .about-content1 {
+    margin-left: 100px !important;
+  } 
+  .intro {
+    margin-left: 60px !important;
+  }
+  .about-head {
+    margin-top: 100px !important;
+    margin-left: 100px !important;
+    font-size: 125px !important;
+  }
+  .about-me {
+    margin-left: 80px !important;
+    font-size: 35px !important;
+    margin-top: 80px !important;
+  }
+  .title-experience {
+    margin-left: 100px !important;
+    font-size: 125px !important;
+  }
+  .experience-head {
+    margin-left: 80px !important;
+    font-size: 35px !important;
+    margin-top: 80px !important;
+  }
+  .skills-intro {
+    margin-left: 100px !important;
+    font-size: 125px !important;
+  }
+  .skills-head {
+    margin-left: 80px !important;
+    font-size: 35px !important;
+    margin-top: 280px !important;
+  }
+  .project-intro {
+    margin-left: 100px !important;
+    font-size: 125px !important;
+  }
+  .project-head {
+    margin-left: 80px !important;
+    font-size: 35px !important;
+    margin-top: 220px !important;
+  }
+  .socials-intro {
+    margin-left: 100px !important;
+    font-size: 125px !important;
+  }
+  .socials-head {
+    margin-left: 80px !important;
+    font-size: 35px !important;
+    margin-top: 460px !important;
+  }
+}
+@media screen and (max-width: 928px) {
+  .logo-con {
+    width: 30% !important;
+  } 
+  .about-content1 {
+    width: 600px !important;
+  }
+}
+@media screen and (max-width: 735px) {
+  .about-content1 {
+    width: 400px !important;
+  }
+}
+@media screen and (max-width: 839px) {
+  .Header {
+    display: none !important;
+  }
+  .intro-content3 {
+    margin-top: 50px !important;
+  }
+  .header-hb {
+    display: block;
+  }
+}
 .page {
   height: 100%;
   width: 100%;
 }
-head-list {
+.head-list {
   list-style: none;
 }
+
 li {
-  display: inline-block;
+  display: inline;
   padding: 15px;
 }
-.contents {
-  align-self: flex-end;
+.logo-con {
   position: relative;
-  margin-top: 10px;
-  width: fit-content;
-  margin-left: 58%;
+  display: inline-block;
+  height: 50%;
+  width: 58%;
+  min-width: 0;
+}
+.contents {
+  display: inline-block;
+  padding-top: 10px;
   font-weight: 500;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -70,6 +179,13 @@ a {
   background-color: rgb(89, 86, 116);
 }
 
+@media screen and (max-width: 685px) {
+  .intro {
+    margin-left: 0px !important;
+  } 
+}
+
+
 .experience-effect {
   width: 92px;
   height: 5px;
@@ -86,6 +202,37 @@ a {
 
   background-color: rgb(53, 161, 194);
 }
+
+@media screen and (max-width: 625px) {
+  .intro_img {
+    padding-bottom: 10px;
+    margin-left: 45px !important;
+    display: block;
+  }
+  .intro-content {
+    position: static !important;
+  }
+  .intro-content2 {
+    margin-top: 10px !important;
+    position: static;
+    display: block;
+  }
+  .intro-content3 {
+    display: block !important;
+    margin-top: 0px !important;
+    position: static !important;
+    padding-bottom: 20px !important;
+  }
+  .intro-content4 {
+    position: relative !important;
+    margin-top: 10px !important;
+    width: 400px !important;
+  }
+  .contact-us {
+    display: block;
+    margin-top: 0px !important;
+  }
+}
 .socials-effect {
   width: 65px;
   height: 5px;
@@ -100,10 +247,19 @@ a {
   margin-top: 150px;
   margin-left: 160px;
 }
+
+@media screen and (max-width: 450) {
+  .intro_img {
+    margin-left: 40% !important;
+  }
+}
+
+
 .intro-content {
   position: absolute;
   display: inline-block;
   padding-left: 20px;
+  padding-right: 20px;
   letter-spacing: 1px;
   font-size: 21px;
   font-weight: 100;
@@ -121,11 +277,119 @@ a {
   font-family: "Source Code Pro", monospace;
 }
 
+
+@media screen and (max-width: 1108px) {
+  .intro {
+    margin-left: 60px;
+  }
+  .about-head {
+    margin-left: 100px !important;
+  }
+  .about-head {
+    margin-left: 100px !important;
+  }
+  .about-me {
+    margin-left: 80px !important;
+  }
+  .title-experience {
+    margin-left: 100px !important;
+  }
+  .experience-head {
+    margin-left: 80px !important;
+  }
+  .skills-intro {
+    margin-left: 100px !important;
+  }
+  .skills-head {
+    margin-left: 80px !important;
+  }
+  .project-intro {
+    margin-left: 100px !important;
+  }
+  .project-head {
+    margin-left: 80px !important;
+  }
+  .socials-intro {
+    margin-left: 100px !important;
+  }
+  .socials-head {
+    margin-left: 80px !important;
+  }
+}
+@media screen and (max-width: 1003px) {
+  .intro-content2 {
+    margin-top: 55px;
+  }
+  .intro-content3  {
+    margin-top: 70px !important;
+  }
+  .intro-content4 {
+    margin-top: 180px !important;
+  }
+  .contact-us {
+    margin-top: 0px !important;
+  }
+}
+@media screen and (max-width: 835px) {
+  .intro-content4 {
+    margin-top: 240px !important;
+  }
+  .contact-us {
+    margin-top: 330px !important;
+  }
+  .about-head {
+    margin-top: 180px !important;
+    margin-left: 100px !important;
+    font-size: 100px !important;
+  }
+  .about-me {
+    margin-left: 80px !important;
+    font-size: 35px !important;
+    margin-top: 80px !important;
+  }
+  .title-experience {
+    margin-left: 100px !important;
+    font-size: 100px !important;
+  }
+  .experience-head {
+    margin-left: 80px !important;
+    font-size: 35px !important;
+    margin-top: 80px !important;
+  }
+  .skills-intro {
+    margin-left: 100px !important;
+    font-size: 100px !important;
+  }
+  .skills-head {
+    margin-left: 80px !important;
+    font-size: 35px !important;
+    margin-top: 280px !important;
+  }
+  .project-intro {
+    margin-left: 100px !important;
+    font-size: 100px !important;
+  }
+  .project-head {
+    margin-left: 80px !important;
+    font-size: 35px !important;
+    margin-top: 220px !important;
+  }
+  .socials-intro {
+    margin-left: 100px !important;
+    font-size: 100px !important;
+  }
+  .socials-head {
+    margin-left: 80px !important;
+    font-size: 35px !important;
+    margin-top: 460px !important;
+  }
+}
 .intro-content3 {
   position: absolute;
   display: inline;
   padding-left: 20px;
   margin-top: 50px;
+  padding-right: 10px;
   font-family: "Source Code Pro", monospace;
   font-size: 30px;
   font-weight: 100;
@@ -136,8 +400,9 @@ a {
   position: absolute;
   display: inline;
   padding-left: 20px;
+  padding-right: 20px;
   font-family: "Montserrat", sans-serif;
-  margin-top: 150px;
+  margin-top: 160px;
   font-size: 18px;
   font-weight: 100;
 }
@@ -154,7 +419,7 @@ a {
   position: absolute;
   margin-left: 20px;
   transition: 0.6s;
-  margin-top: 200px;
+  margin-top: 220px;
 }
 .contact-us:hover {
   background-color: #d5b019;
@@ -182,6 +447,7 @@ a {
   margin-top: 70px;
   margin-left: 350px;
   width: 800px;
+  padding-right: 10px;
   font-weight: 400;
   color: whitesmoke;
 }
@@ -270,7 +536,7 @@ a {
 .owasp-exp {
   height: 400px;
   width: 400px;
-  margin-left: 72%;
+  margin-left: 70%;
 }
 .owasp-img {
   margin-left: 50px;
@@ -1073,7 +1339,7 @@ a {
   height: 80px;
   position: absolute;
   display: inline-block;
-  background-color: #4285f4;
+  background-color: #23147d;
 }
 .svg-icon {
   height: 30px;
@@ -1093,7 +1359,7 @@ a {
   transition: 0.6s;
 }
 .mail-discription:hover {
-  color: #4285f4;
+  color: #23147d;
 }
 .mail-link {
   width: 300px;
@@ -1103,7 +1369,7 @@ a {
 .inst {
   width: 300px;
   height: 80px;
-  margin-top: 50px;
+  margin-top: 200px;
   margin-left: 680px;
   position: absolute;
   display: inline;
@@ -1242,3 +1508,148 @@ a {
   font-family: "Source Code Pro", monospace;
   font-weight: 300;
 }
+
+.linke {
+  width: 300px;
+  height: 80px;
+  margin-top: 50px;
+  margin-left: 680px;
+  position: absolute;
+  display: inline;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: rgb(52, 45, 45);
+}
+
+.linke-mail {
+  width: 6px;
+  height: 80px;
+  position: absolute;
+  display: inline-block;
+  background-color: #0072b1;
+}
+.linke-icon {
+  height: 30px;
+  width: 30px;
+  display: inline;
+  position: absolute;
+  top: 8px;
+}
+.linke-discription {
+  font-size: 20px;
+  position: absolute;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 300;
+  width: 280px;
+  margin-top: 15px;
+  margin-left: 50px;
+  text-transform: uppercase;
+  transition: 0.6s;
+}
+.linke-discription:hover {
+  color: #0072b1;
+}
+.linke-link {
+  width: 300px;
+}
+
+
+label .menu {
+  position: absolute;
+  right: -100px;
+  top: -100px;
+  z-index: 100;
+  width: 200px;
+  height: 200px;
+  background: #FFF;
+  border-radius: 50% 50% 50% 50%;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+  cursor: pointer;
+  
+}
+
+label .hamburger {
+  position: absolute;
+  top: 135px;
+  left: 50px;
+  width: 30px;
+  height: 2px;
+  background: #151515;
+  display: block;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+label .hamburger:after, label .hamburger:before {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #151515;
+}
+
+label .hamburger:before { top: -10px; }
+
+label .hamburger:after { bottom: -10px; }
+
+label input { display: none; }
+
+label input:checked + .menu {
+  box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+  border-radius: 0;
+  
+}
+
+label input:checked + .menu .hamburger {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  
+}
+
+label input:checked + .menu .hamburger:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  bottom: 0;
+  
+}
+
+label input:checked + .menu .hamburger:before {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  top: 0;
+  
+}
+
+label input:checked + .menu + ul { opacity: 1; }
+
+label ul {
+  z-index: 200;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: .25s 0s ease-in-out;
+  transition: .25s 0s ease-in-out;
+}
+
+label a {
+  margin-bottom: 1em;
+  display: block;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  
+}
+
+
