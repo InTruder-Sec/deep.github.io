@@ -37,7 +37,6 @@ body {
   position: fixed;
 }
 
-
 @media screen and (max-width: 1380px) {
   .logo-con {
     width: 55% !important;
@@ -159,6 +158,26 @@ li {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+@media screen and (max-width: 624px) {
+  .intro-content2 {
+    margin-top: 85px !important;
+  }
+  .intro-content3 {
+    padding-top: 30px;
+  }
+  .intro-content4 {
+    padding-top: 100px !important;
+  }
+  .contact-us {
+    top: 300px !important;
+  }
+  .about-head {
+    padding-top: 100px;
+  }
+  .about-me {
+    top: 710px;
+  }
+}
 a {
   color: azure;
   text-decoration: none;
@@ -183,6 +202,52 @@ a {
   .intro {
     margin-left: 0px !important;
   } 
+  .about-head {
+    margin-top: 180px !important;
+    margin-left: 100px !important;
+    font-size: 60px !important;
+  }
+  .about-me {
+    margin-left: 80px !important;
+    font-size: 35px !important;
+    margin-top: 80px !important;
+  }
+  .title-experience {
+    margin-left: 100px !important;
+    font-size: 60px !important;
+  }
+  .experience-head {
+    margin-left: 80px !important;
+    font-size: 35px !important;
+    margin-top: 80px !important;
+  }
+  .skills-intro {
+    margin-left: 100px !important;
+    font-size: 100px !important;
+  }
+  .skills-head {
+    margin-left: 80px !important;
+    font-size: 35px !important;
+    margin-top: 280px !important;
+  }
+  .project-intro {
+    margin-left: 100px !important;
+    font-size: 100px !important;
+  }
+  .project-head {
+    margin-left: 80px !important;
+    font-size: 35px !important;
+    margin-top: 220px !important;
+  }
+  .socials-intro {
+    margin-left: 100px !important;
+    font-size: 100px !important;
+  }
+  .socials-head {
+    margin-left: 80px !important;
+    font-size: 35px !important;
+    margin-top: 460px !important;
+  }
 }
 
 
@@ -203,36 +268,6 @@ a {
   background-color: rgb(53, 161, 194);
 }
 
-@media screen and (max-width: 625px) {
-  .intro_img {
-    padding-bottom: 10px;
-    margin-left: 45px !important;
-    display: block;
-  }
-  .intro-content {
-    position: static !important;
-  }
-  .intro-content2 {
-    margin-top: 10px !important;
-    position: static;
-    display: block;
-  }
-  .intro-content3 {
-    display: block !important;
-    margin-top: 0px !important;
-    position: static !important;
-    padding-bottom: 20px !important;
-  }
-  .intro-content4 {
-    position: relative !important;
-    margin-top: 10px !important;
-    width: 400px !important;
-  }
-  .contact-us {
-    display: block;
-    margin-top: 0px !important;
-  }
-}
 .socials-effect {
   width: 65px;
   height: 5px;
@@ -246,12 +281,6 @@ a {
   padding: 30px;
   margin-top: 150px;
   margin-left: 160px;
-}
-
-@media screen and (max-width: 450) {
-  .intro_img {
-    margin-left: 40% !important;
-  }
 }
 
 
@@ -327,7 +356,7 @@ a {
     margin-top: 180px !important;
   }
   .contact-us {
-    margin-top: 0px !important;
+    margin-top: 250px !important;
   }
 }
 @media screen and (max-width: 835px) {
