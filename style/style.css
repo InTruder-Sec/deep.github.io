@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 ::-moz-selection {
   color: white;
@@ -50,10 +51,31 @@ body {
   .h1-exp {
     margin-left: 23% !important;
   }
+  .skills-list {
+    margin-left: 100px !important;
+  }
+
+  .catagories {
+    margin-left: 750px !important;
+  }
+  .social-display {
+    margin-left: 100px !important;
+  }
+  .socials-icon {
+    margin-left: 120px !important;
+  }
+  .project-div {
+    margin-left: 120px !important;
+  }
+  .project-div2 {
+    margin-left: 120px !important;
+  }.project-div3 {
+    margin-left: 120px !important;
+  }
 }
 @media screen and (max-width: 1280px) {
   .logo-con {
-    width: 40% !important;
+    width: 50% !important;
   }
   .about-content1 {
     margin-left: 100px !important;
@@ -69,7 +91,7 @@ body {
   .about-me {
     margin-left: 80px !important;
     font-size: 35px !important;
-    margin-top: 80px !important;
+    margin-top: 90px !important;
   }
   .title-experience {
     margin-left: 100px !important;
@@ -78,7 +100,7 @@ body {
   .experience-head {
     margin-left: 80px !important;
     font-size: 35px !important;
-    margin-top: 80px !important;
+    margin-top: 90px !important;
   }
   .skills-intro {
     margin-left: 100px !important;
@@ -87,7 +109,7 @@ body {
   .skills-head {
     margin-left: 80px !important;
     font-size: 35px !important;
-    margin-top: 280px !important;
+    margin-top: 290px !important;
   }
   .project-intro {
     margin-left: 100px !important;
@@ -96,7 +118,7 @@ body {
   .project-head {
     margin-left: 80px !important;
     font-size: 35px !important;
-    margin-top: 220px !important;
+    margin-top: 230px !important;
   }
   .socials-intro {
     margin-left: 100px !important;
@@ -105,7 +127,92 @@ body {
   .socials-head {
     margin-left: 80px !important;
     font-size: 35px !important;
-    margin-top: 460px !important;
+    margin-top: 480px !important;
+  }
+  .linke {
+    margin-left: 340px !important;
+  }
+  .inst {
+    margin-left: 340px !important;
+  }
+  .git {
+    margin-left: 670px !important;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .project-div {
+    margin-left: 80px !important;
+  }
+  .project-div2 {
+    margin-left: 80px !important;
+  }
+  .project-div3 {
+    margin-left: 80px !important;
+  }
+  .pro-subhead2 {
+    margin-left: 500px !important;
+  }
+  .pro-link{ 
+    margin-left: 500px !important;
+  }
+  .pro-subhead3 {
+    margin-left: 850px !important;
+  }
+  .pro-tech {
+    margin-left: 850px !important;
+  }
+}
+@media screen and (max-width: 1106px) {
+  .logo-con {
+    width: 40% !important;
+  }
+  .owasp-exp {
+    margin-top: 150px !important;
+    margin-left: 22% !important;
+  }
+  .h1-exp {
+    margin-top: 150px !important;
+  }
+  .skills-list {
+    margin-top: 620px !important;
+  }
+  .catagories {
+    margin-left: 200px !important;
+  }
+  .pro-subhead2{
+    margin-top: 330px !important;
+    margin-left: 110px !important;
+  }
+  .pro-link {
+    margin-top: 370px !important;
+    margin-left: 110px !important;
+  }
+  .pro-subhead3{
+    margin-top: 450px !important;
+    margin-left: 110px !important;
+  }
+  .pro-tech{
+    margin-top: 490px !important;
+    margin-left: 110px !important;
+  }
+  .project-div2{
+    margin-top: 650px !important;
+  }
+  .project-div3{
+    margin-top: 650px !important;
+  }
+  .socials-intro{
+    margin-top: 600px !important;
+  }
+  .socials-head{
+    margin-top: 690px !important;
+  }
+  .git{
+    margin-top: 350px !important;
+    margin-left: 10px !important;
+  }
+  .foot{
+    margin-top: 550px !important;
   }
 }
 @media screen and (max-width: 928px) {
@@ -120,6 +227,9 @@ body {
   .about-content1 {
     width: 400px !important;
   }
+  .about-head {
+    font-size: 20px !important;
+  }
 }
 @media screen and (max-width: 839px) {
   .Header {
@@ -130,6 +240,7 @@ body {
   }
   .header-hb {
     display: block;
+    overflow: hidden;
   }
 }
 .page {
@@ -177,6 +288,21 @@ li {
   .about-me {
     top: 710px;
   }
+  .vtf-exp {
+    margin-left: 50px !important;
+  }
+  .owasp-exp {
+    margin-left: 50px !important;
+  }
+  .h1-exp {
+    margin-left: 50px !important;
+  }
+  .catagories {
+    margin-left: 80px !important;
+  }
+  .skills-list {
+    margin-left: 20px !important;
+  }
 }
 a {
   color: azure;
@@ -202,52 +328,7 @@ a {
   .intro {
     margin-left: 0px !important;
   } 
-  .about-head {
-    margin-top: 180px !important;
-    margin-left: 100px !important;
-    font-size: 60px !important;
-  }
-  .about-me {
-    margin-left: 80px !important;
-    font-size: 35px !important;
-    margin-top: 80px !important;
-  }
-  .title-experience {
-    margin-left: 100px !important;
-    font-size: 60px !important;
-  }
-  .experience-head {
-    margin-left: 80px !important;
-    font-size: 35px !important;
-    margin-top: 80px !important;
-  }
-  .skills-intro {
-    margin-left: 100px !important;
-    font-size: 100px !important;
-  }
-  .skills-head {
-    margin-left: 80px !important;
-    font-size: 35px !important;
-    margin-top: 280px !important;
-  }
-  .project-intro {
-    margin-left: 100px !important;
-    font-size: 100px !important;
-  }
-  .project-head {
-    margin-left: 80px !important;
-    font-size: 35px !important;
-    margin-top: 220px !important;
-  }
-  .socials-intro {
-    margin-left: 100px !important;
-    font-size: 100px !important;
-  }
-  .socials-head {
-    margin-left: 80px !important;
-    font-size: 35px !important;
-    margin-top: 460px !important;
-  }
+  
 }
 
 
@@ -410,7 +491,26 @@ a {
   .socials-head {
     margin-left: 80px !important;
     font-size: 35px !important;
+    margin-top: 680px !important;
+  }
+}
+@media screen and (max-width: 780px) {
+  .linke{
+    margin-top: 180px !important;
+    margin-left: 10px !important;
+  }
+  .yt{
+    margin-top: 320px !important;
+  }
+  .inst {
     margin-top: 460px !important;
+    margin-left: 10px !important;
+  }
+  .git {
+    margin-top: 600px !important;
+  }
+  .foot {
+    margin-top: 800px !important;
   }
 }
 .intro-content3 {
@@ -462,6 +562,41 @@ a {
   margin-top: 100px;
   text-transform: uppercase;
   font-family: "Source Code Pro", monospace;
+}
+@media screen and (max-width: 735px) {
+  .about-content1 {
+    width: 400px !important;
+  }
+  .about-head {
+    font-size: 80px !important;
+  }
+  .about-me {
+    margin-top: 60px !important;
+  }
+  .title-experience {
+    font-size: 80px !important;
+  }
+  .experience-head {
+    margin-top: 60px !important;
+  }
+  .skills-intro {
+    font-size: 80px !important;
+  }
+  .skills-head {
+    margin-top: 260px !important;
+  }
+  .project-intro {
+    font-size: 80px !important;
+  }
+  .project-head {
+    margin-top: 210px !important;
+  }
+  .socials-intro {
+    font-size: 80px !important;
+  }
+  .socials-head {
+    margin-top: 660px !important;
+  }
 }
 .about-me {
   position: absolute;
@@ -1068,18 +1203,21 @@ a {
   font-family: "Source Code Pro", monospace;
   padding-top: 80px;
   font-weight: 600;
-  padding-left: 200px;
+  padding-left: 100px;
 }
 .time-line-1 {
   font-size: 18px;
   font-family: "Source Code Pro", monospace;
   padding-top: 80px;
-  margin-left: 300px;
+  margin-left: 50px;
+}
+.skills-list {
+  margin-left: 250px;
 }
 .timeline {
   width: 140px;
   rotate: 90deg;
-  margin-left: 270px;
+  margin-left: 0px;
   display: inline;
   z-index: 1;
   position: absolute;
@@ -1089,7 +1227,7 @@ a {
   width: 300px;
   height: 80px;
   margin-top: 20px;
-  margin-left: 380px;
+  margin-left: 150px;
   background-color: rgb(52, 45, 45);
 
 }
@@ -1098,8 +1236,8 @@ a {
   width: 300px;
   display: inline-block;
   position: absolute;
+  margin-left: 10px;
   margin-top: 100px;
-  margin-left: 1000px;
   background-color: rgb(52, 45, 45);
   
 } 
@@ -1107,9 +1245,9 @@ a {
   height: 80px;
   width: 300px;
   display: inline-block;
+  margin-left: 10px;
   position: absolute;
   margin-top: 220px;
-  margin-left: 1000px;
   background-color: rgb(52, 45, 45);
   
 }
@@ -1117,9 +1255,9 @@ a {
   height: 80px;
   width: 300px;
   display: inline-block;
+  margin-left: 10px;
   position: absolute;
   margin-top: 340px;
-  margin-left: 1000px;
   background-color: rgb(52, 45, 45);
   
 }
@@ -1129,7 +1267,7 @@ a {
   display: inline-block;
   position: absolute;
   margin-top: 460px;
-  margin-left: 1000px;
+  margin-left: 10px;
   background-color: rgb(52, 45, 45);
   
 }
@@ -1189,32 +1327,35 @@ a {
 .skill-discription2:hover {
   color: #dd3737;
 }
+.catagories {
+  margin-top: 50px;
+  margin-left: 1000px;
+}
 .category-level {
   display: inline-block;
   position: absolute;
   font-family: "Source Code Pro", monospace;
   font-weight: 600;
   font-size: 25px;
-  margin-left: 960px;
   margin-top: 0px;
 }
 .time-line-2 {
   font-size: 18px;
   font-family: "Source Code Pro", monospace;
   padding-top: 40px;
-  margin-left: 300px;
+  margin-left: 50px;
 }
 .end-timeline {
   width: 200px;
-  margin-left: 340px;
-  margin-top: 27px;
+  margin-left: 70px;
+  margin-top: 25px;
   opacity: 0.5;
 }
 .end-timeline2 {
   rotate: 90deg;
   width: 20px;
   margin-top: 10px;
-  margin-left: 530px;
+  margin-left: 260px;
   opacity: 0.5;
 }
 
@@ -1233,28 +1374,33 @@ a {
   margin-left: 230px;
   font-family: "Source Code Pro", monospace;
 }
+.project-div {
+  margin-left: 200px;
+}
 .pro-no {
   color: #dd3737;
   font-family: "Source Code Pro", monospace;
   font-size: 20px;
-  margin-left: 300px;
+  margin-left: 110px;
   margin-top: 120px;
 }
 .pro-img {
-  margin-left: 170px;
+  margin-left: 0px;
   display: inline;
   position: absolute;
 }
 .pro-head {
   font-family: "Source Code Pro", monospace;
   font-size: 30px;
-  margin-left: 300px;
+  margin-left: 110px;
+  padding-right: 10px;
 }
 
 .pro-subhead {
   font-family: "Source Code Pro", monospace;
   font-size: 18px;
-  margin-left: 300px;
+  margin-left: 110px;
+  color: aqua;
   transition: 0.8s;
   margin-top: 60px;
   position: absolute;
@@ -1267,34 +1413,32 @@ a {
 .pro-subhead2 {
   font-family: "Source Code Pro", monospace;
   font-size: 18px;
-  margin-left: 750px;
+  margin-left: 610px;
   margin-top: 60px;
   position: absolute;
   transition: 0.8s;
   display: inline;
-}
-.pro-subhead2:hover {
   color: aqua;
 }
+
 
 .pro-subhead3 {
   font-family: "Source Code Pro", monospace;
   font-size: 18px;
-  margin-left: 1150px;
+  margin-left: 950px;
   margin-top: 60px;
   position: absolute;
   transition: 0.8s;
+  color: aqua;
   display: inline;
 }
-.pro-subhead3:hover {
-  color: aqua;
-}
+
 
 .pro-discription {
   font-family: "Source Code Pro", monospace;
   font-size: 18px;
   margin-top: 120px;
-  margin-left: 300px;
+  margin-left: 110px;
   width: 350px;
   position: absolute;
   display: inline;
@@ -1302,7 +1446,7 @@ a {
 .pro-link {
   font-family: "Source Code Pro", monospace;
   font-size: 18px;
-  margin-left: 750px;
+  margin-left: 610px;
   margin-top: 120px;
   width: 300px;
   position: absolute;
@@ -1319,14 +1463,16 @@ a {
   font-size: 18px;
   display: inline;
   position: absolute;
-  margin-left: 1150px;
+  margin-left: 950px;
   margin-top: 120px;
 }
 .project-div2 {
   margin-top: 400px;
+  margin-left: 200px;
 }
 .project-div3 {
   margin-top: 400px;
+  margin-left: 200px;
 }
 
 .socials-intro {
@@ -1350,12 +1496,15 @@ a {
   margin-left: 200px;
   margin-top: 100px;
 }
+.socials-icon {
+  margin-left: 200px;
+}
 
 .mail {
   width: 300px;
   height: 80px;
   margin-top: 50px;
-  margin-left: 280px;
+  margin-left: 10px;
   position: absolute;
   display: inline;
   border-bottom-right-radius: 8px;
@@ -1399,7 +1548,7 @@ a {
   width: 300px;
   height: 80px;
   margin-top: 200px;
-  margin-left: 680px;
+  margin-left: 410px;
   position: absolute;
   display: inline;
   border-bottom-right-radius: 8px;
@@ -1442,7 +1591,7 @@ a {
   width: 300px;
   height: 80px;
   margin-top: 50px;
-  margin-left: 1080px;
+  margin-left: 820px;
   position: absolute;
   display: inline;
   border-bottom-right-radius: 8px;
@@ -1488,7 +1637,7 @@ a {
   width: 300px;
   height: 80px;
   margin-top: 200px;
-  margin-left: 280px;
+  margin-left: 10px;
   position: absolute;
   display: inline;
   border-bottom-right-radius: 8px;
@@ -1527,6 +1676,7 @@ a {
   width: 300px;
 }
 .foot {
+  position: absolute;
   width: 100%;
   height: 30px;
   background-color: whitesmoke;
@@ -1542,7 +1692,7 @@ a {
   width: 300px;
   height: 80px;
   margin-top: 50px;
-  margin-left: 680px;
+  margin-left: 410px;
   position: absolute;
   display: inline;
   border-bottom-right-radius: 8px;
