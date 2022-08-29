@@ -1734,7 +1734,7 @@ a {
 
 
 label .menu {
-  position: absolute;
+  position: fixed;
   right: -100px;
   top: -100px;
   z-index: 100;
@@ -1829,6 +1829,396 @@ label a {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   
+}
+
+@media screen and (max-width: 554px) {
+  .intro-content {
+    margin-left: 30px;
+    display: block;
+  }
+  .intro-content2 {
+    display: block;
+    margin-left: 30px;
+    margin-top: 60px !important;
+  }
+  .intro-content3 {
+    display: block;
+    margin-left: 30px;
+    margin-top: 50px !important;
+  }
+  .intro-content4 {
+    display: block;
+    margin-left: 30px;
+    margin-top: 150px !important;
+  }
+  .contact-us {
+    margin-top: 440px !important;
+    margin-left: 50px !important;
+    display: block;
+  }
+  .about-head {
+    margin-top: 350px !important;
+    font-size: 60px !important;
+    margin-left: 60px !important;
+  }
+  .about-me {
+    margin-top: 220px !important;
+    margin-left: 40px !important;
+    font-size: 30px !important;
+  }
+  .title-experience {
+    font-size: 60px !important;
+    margin-left: 60px !important;
+  }
+  .experience-head {
+    font-size: 30px !important;
+    margin-top: 40px !important;
+    margin-left: 40px !important;
+  }
+  .skills-intro {
+    font-size: 60px !important;
+    margin-left: 60px !important;
+  }
+  .skills-head {
+    margin-top: 240px !important;
+    margin-left: 40px !important;
+    font-size: 30px !important;
+  }
+  .project-intro {
+    font-size: 60px !important;
+    margin-left: 60px !important;
+  }
+  .project-head {
+    margin-top: 190px !important;
+    margin-left: 40px !important;
+    font-size: 30px !important;
+  }
+  .socials-intro {
+    font-size: 60px !important;
+    margin-left: 60px !important;
+  }
+  .socials-head {
+    margin-left: 40px !important;
+    margin-top: 640px !important;
+    font-size: 30px !important;
+  }
+}
+@media screen and (max-width: 548px) {
+  .project-div {
+    margin-left: 30px !important;
+  }
+  .project-div2 {
+    margin-left: 30px !important;
+  }
+  .project-div3 {
+    margin-left: 30px !important;
+  }
+  .pro-subhead {
+    margin-left: 10px !important;
+    margin-top: 120px !important;
+  }
+  .pro-discription {
+    margin-top: 170px !important;
+    margin-left: 30px !important;
+  }
+  .pro-subhead2 {
+    margin-left: 10px !important;
+    margin-top: 380px !important;
+  }
+  .pro-link {
+    margin-left: 30px !important;
+    margin-top: 410px !important;
+  }
+  .pro-subhead3 {
+    margin-left: 10px !important;
+    margin-top: 490px !important;
+  }
+  .intro_img {
+    margin-top: 0px !important;
+  }
+  .pro-tech {
+    margin-left: 30px !important;
+    margin-top: 530px !important;
+  }
+  .about-content1 {
+    margin-left: 70px !important;
+    width: auto !important;
+    padding-right: 10px;
+  }
+  .project-div2 {
+    margin-top: 770px !important;
+  }
+  .project-div3 {
+    margin-top: 700px !important;
+  }
+  .socials-intro {
+    margin-top: 660px !important;
+  }
+  .socials-head {
+    margin-top: 700px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .catagories {
+    margin-left: 30px !important;
+  }
+  .skills-list {
+    margin-left: 0px !important;
+  }
+  .tab1 {
+    margin-left: 90px !important;
+    width: 260px !important;
+  }
+  .social-display {
+    margin-left: 50px !important;
+  }
+  .socials-icon {
+    margin-left: 50px !important;
+  }
+  .mail {
+    width: 260px !important;
+  }
+  .git {
+    width: 260px !important;
+  }
+  .linke {
+    width: 260px !important;
+  }
+  .yt {
+    width: 260px !important;
+  }
+  .inst {
+    width: 260px !important;
+  }
+  .vtf-exp {
+    margin-left: 10px !important;
+  }
+  .vtf-img {
+    width: 280px !important;
+    height: 280px !important;
+  }
+  .vtf-head {
+    width: 300px !important;
+    height: 110px !important;
+  }
+  .vtf-border {
+    width: 300px !important;
+  }
+  .vtf-location{
+    margin-left: 230px !important;
+    margin-top: 0px;
+  }
+  .vtf-role {
+    margin-top: 0px !important;
+  }
+  .owasp-exp {
+    margin-left: 10px !important;
+  }
+  .owasp-img {
+    width: 280px !important;
+    height: 280px !important;
+  }
+  .owasp-head {
+    width: 300px !important;
+    height: 110px !important;
+  }
+  .owasp-border {
+    width: 300px !important;
+  }
+  .owasp-location{
+    margin-left: 230px !important;
+    margin-top: 0px;
+  }
+  .owasp-role {
+    margin-top: 0px !important;
+  }
+  .h1-exp {
+    margin-left: 10px !important;
+  }
+  .h1-img {
+    width: 280px !important;
+    height: 280px !important;
+  }
+  .h1-head {
+    width: 300px !important;
+    height: 110px !important;
+  }
+  .h1-border {
+    width: 300px !important;
+  }
+  .h1-location{
+    margin-left: 230px !important;
+    margin-top: 0px;
+  }
+  .h1-role {
+    margin-top: 0px !important;
+  }
+}
+@media screen and (max-width: 434px) {
+  .intro-content2 {
+    margin-top: 85px !important;
+  }
+  .intro-content3 {
+    margin-top: 80px !important;
+  }
+  .intro-content4 {
+    margin-top: 220px !important;
+  }
+  .contact-us {
+    margin-top: 550px !important;
+  }
+  .about-head {
+    margin-top: 400px !important;
+  }
+  .about-me {
+    margin-top: 270px !important;
+  }
+  .pro-discription {
+    width: auto;
+  }
+  .foot {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 362px) {
+  .intro-content {
+    margin-left: 0px !important;
+  }
+  .intro-content2 {
+    margin-left: 0px !important;
+  }
+  .intro-content3 {
+    margin-left: 0px !important;
+  }
+  .intro-content4 {
+    margin-left: 0px !important;
+    margin-top: 280px !important;
+  }
+  .contact-us {
+    margin-top: 600px !important;
+  }
+  .about-head {
+    margin-top: 500px !important;
+  }
+  .about-me {
+    margin-top: 370px !important;
+  }
+  .title-experience {
+    font-size: 45px !important;
+    margin-left: 40px !important;
+  }
+  .experience-head {
+    margin-top: 30px !important;
+  }
+  .vtf-exp {
+    margin-left: 0px !important;
+  }
+  .vtf-img {
+    width: 250px !important;
+    height: 250px !important;
+  }
+  .vtf-head {
+    width: 280px !important;
+    height: 110px !important;
+  }
+  .vtf-border {
+    width: 280px !important;
+  }
+  .vtf-location{
+    margin-left: 210px !important;
+    margin-top: 0px;
+  }
+  .owasp-exp {
+    margin-left: 0px !important;
+    margin-top: 60px !important;
+  }
+  .owasp-img {
+    width: 250px !important;
+    height: 250px !important;
+  }
+  .owasp-head {
+    width: 280px !important;
+    height: 110px !important;
+  }
+  .owasp-border {
+    width: 280px !important;
+  }
+  .owasp-location{
+    margin-left: 210px !important;
+    margin-top: 0px;
+  }
+  .h1-exp {
+    margin-left: 0px !important;
+    margin-top: 60px !important;
+  }
+  .h1-img {
+    width: 250px !important;
+    height: 250px !important;
+  }
+  .h1-head {
+    width: 280px !important;
+    height: 110px !important;
+  }
+  .h1-border {
+    width: 280px !important;
+  }
+  .h1-location{
+    margin-left: 210px !important;
+    margin-top: 0px;
+  }
+  .skills-intro {
+    margin-top: 100px !important;
+  }
+  .skills-head {
+    margin-top: 140px !important;
+  }
+  .catagories {
+    margin-left: 15px !important;
+  }
+  .level1 {
+    width: 260px !important;
+  }
+  .level2 {
+    width: 260px !important;
+  }
+  .level3 {
+    width: 260px !important;
+  }
+  .level4 {
+    width: 260px !important;
+  }
+  .skills-list {
+    margin-left: 0px !important;
+  }
+  .timeline {
+    display: none;
+  }
+  .time-line-2 {
+    display: none;
+  }
+  .end-timeline {
+    display: none;
+  }
+  .end-timeline2 {
+    display: none;
+  }
+  .tab1 {
+    margin-left: 30px !important;
+  }
+  .project-intro {
+    margin-left: 30px !important;
+  }
+  .pro-subhead2 {
+    margin-top: 400px !important;
+  }
+  .pro-link {
+    margin-top: 430px !important;
+  }
+  .socials-icon {
+    margin-left: 20px !important;
+  }
 }
 
 
