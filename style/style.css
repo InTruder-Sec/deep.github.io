@@ -1960,6 +1960,9 @@ label a {
 }
 
 @media screen and (max-width: 500px) {
+  body {
+    zoom: 90%;
+  }
   .catagories {
     margin-left: 30px !important;
   }
