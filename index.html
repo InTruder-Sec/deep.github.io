@@ -34,8 +34,11 @@
         <div class="Header" id="navigation">
             <div class="logo-con"></div>
             <div class="contents">
+                
                 <ul class="head-list">
-                    <li style="display: inline-block;"><a href="/#about-content" class="about">ABOUT</a><br>
+                    <li style="display: inline-block;">
+                        <a href="/#about-content" class="about">ABOUT</a><br>
+                        <div class="about-effect"></div>
                         <div class="about-effect"></div>
                     </li>
                     <li style="display: inline-block;"><a href="/#experience" class="experience">EXPERIENCE</a><br>
@@ -86,30 +89,11 @@
         <div id="experience" class="experience">
             <div class="experience-head">My Experience</div>
             <div class="title-experience">Experience</div>
-            <div class="vtf-modal-open" id="vtf-modal">
-                <div id="vtf-discription" class="vtf-discription">
-                    <div class="navigation-terminal">
-                        <div class="close" onclick="closeM()" onmouseover="funClose()" onmouseout="remove()" id="close"></div>
-                        <div class="small" onclick="closeM()" onmouseover="funSmall()" onmouseout="remove()" id="small"></div>
-                        <div class="min" onclick="closeM()" onmouseover="funMin()" onmouseout="remove()" id="min"></div>
-                    </div>
-                    <div class="modal-content">
-                        
-                        <div class="vtf-img2"><img src="./src/vtf-image.png" alt="VTF image"></div>
-                        <div class="vtf-1"><u>Virtual Testing Foundation</u></div>
-                        <div class="vtf2">Cyber Security Intern</div><div class="vtf3">JAN 18 2021 - MAR 18 2021</div>
-                        <div class="vtf4">Remote</div>
-                        <div class="vtf5">
-                            VTF is a California, USA based 501(c)3 nonprofit volunteer-run organization. Over the internship period I have completed,<br>
-                            <ul class="vtf-list">
-                                <li>●  Kube Academy Courses</li><br>
-                                <li>●  Hands-on lab learning</li><br>
-                                <li>●  Digital and social media marketing</li><br>
-                                <li>●  Captured minutes of meeting and had team collaborations</li><br>
-                            </ul>
-                        </div>
-                    </div>
+            <div>
+                <div class="vtf-dis" id="vtf-dis">
+                    <div class="exit"><hr class="line1"><hr class="line2"></div>
                 </div>
+                <div class="vtf-img"></div>
             </div>
             <div class="vtf-exp" onclick="vtfDiscription()" onmouseover="displayVtf()" onmouseout="out()">
                 <img class="vtf-img" height="350px" width="350px" src="./src/vtf-image.png"
