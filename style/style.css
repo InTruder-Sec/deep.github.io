@@ -1775,7 +1775,7 @@ a {
 
 
 label .menu {
-  position: fixed;
+  position: absolute;
   right: -100px;
   top: -100px;
   z-index: 3;
@@ -2035,8 +2035,11 @@ label a {
   .inst {
     width: 260px !important;
   }
+
   .vtf-exp {
+    margin-top: 100px !important;
     margin-left: 10px !important;
+    width: 280px !important;
   }
   .vtf-img {
     width: 280px !important;
