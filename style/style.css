@@ -688,6 +688,16 @@ a {
   background-color: rgb(0, 0, 0);
 }
 
+.vtf-display-image {
+  height: 10%;
+  bottom: 0;
+  background-color: red;
+  width: 40%;
+  top: 0;
+  position: absolute;
+  transition: 0.8s;
+  z-index: 4;
+}
 
 .vtf-exp {
   height: 400px;

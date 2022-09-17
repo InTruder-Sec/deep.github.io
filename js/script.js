@@ -63,6 +63,7 @@ function vtfDiscription() {
     document.getElementById("vtf-dis").style.height = "100%";
     document.getElementById("exit").style.display = "block";
     document.getElementById("close-arrow").style.transform = 'rotate(45deg)';
+    document.getElementById("vtf-display-image").style.marginTop = "0%";
 }
 
 function owaspDiscription() {
