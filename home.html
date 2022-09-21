@@ -91,12 +91,18 @@
             <div class="title-experience">Experience</div>
             <div>
                 <div class="vtf-dis" id="vtf-dis">
+                    
                     <div class="exit">
-                        <div class="close-button" id="exit" onclick="closevtf()">
+                        <div class="exit-hidden" onclick="closevtf()"></div>
+                        <div class="close-button" id="exit" >
                             <div id="close-arrow" class="close-arrow"></div>
-                            <div class="close-arrow2"></div>
+                            <div class="close-arrow2" id="close-arrow2"></div>
                         </div>
                     </div>
+                </div>
+                <div class="display-vtf-img" id="vtf-image">
+                    <img width="100%" src="./src/vtf-image.png">
+                    <div class="vtf-headline"></div>
                 </div>
             </div>
             <div class="vtf-exp" onclick="vtfDiscription()" onmouseover="displayVtf()" onmouseout="out()">
