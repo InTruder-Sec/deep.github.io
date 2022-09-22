@@ -695,6 +695,16 @@ a {
   z-index: 5;
 }
 
+.img-vtf {
+  margin-left: 5%;
+  margin-top: 10%;
+}
+
+.vtf-headline{
+  font-family: "Source Code Pro", monospace;
+  color: aliceblue;
+}
+
 .close-arrow2 {
   width: 3px;
   border-radius: 3px;
