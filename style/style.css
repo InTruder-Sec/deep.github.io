@@ -651,6 +651,7 @@ a {
   height: 0%;
   width: 30%;
   bottom: 0;
+  opacity: 1;
   position: fixed;
   background-color: rgb(238, 29, 29);
   z-index: 4;
@@ -665,7 +666,7 @@ a {
   position: fixed;
   margin-left: 30%;
   transition: 1s;
-  z-index: 4;
+  z-index: -4;
 }
 .close-button {
   display: none;
@@ -902,8 +903,12 @@ a {
 }
 .vtf-1 {
   margin-left: 40px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 400;
+  font-family: "Source Code Pro", monospace;
+  font-size: 600;
+  transition: 1s;
+  opacity: 0;
+  padding-top: 50px;
+  margin-left: 30px;
   position: absolute;
   
 }
