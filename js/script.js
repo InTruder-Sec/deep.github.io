@@ -63,6 +63,8 @@ function vtfDiscription() {
     document.getElementById("vtf-image").style.height = "100%";
     document.getElementById("vtf-dis").style.height = "100%";
     document.getElementById("exit").style.display = "block";
+    document.getElementById("vtf-dis").style.zIndex = "4";
+    document.getElementById("hide").style.opacity = "1";
     document.getElementById("close-arrow").style.rotate = "45deg";
     document.getElementById("close-arrow").style.opacity = "1";
     document.getElementById("close-arrow2").style.rotate = "135deg";
@@ -126,4 +128,6 @@ function closevtf() {
     document.getElementById("close-arrow").style.opacity = "0";
     document.getElementById("close-arrow2").style.rotate = "0deg";
     document.getElementById("close-arrow2").style.opacity = "0";
+    document.getElementById("hide").style.opacity = "0";
+    document.getElementById("vtf-dis").style.zIndex = "-4";
 }
