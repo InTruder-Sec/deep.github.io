@@ -699,12 +699,17 @@ a {
 .img-vtf {
   margin-left: 5%;
   margin-top: 10%;
+  opacity: 0;
+  transition: 1.5s;
 }
 
 .vtf-headline{
   font-family: "Source Code Pro", monospace;
   color: aliceblue;
   margin-left: 5%;
+  opacity: 0;
+  padding-left: 20px;
+  transition: 1.5s;
 }
 
 .close-arrow2 {
@@ -773,6 +778,17 @@ a {
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.owasp-dis {
+  height: 0px;
+  background-color: rgb(23, 23, 23);
+  width: 70%;
+  top: 0;
+  position: fixed;
+  margin-left: 30%;
+  transition: 1s;
+  z-index: -4;
 }
 
 .owasp-exp {
@@ -905,7 +921,8 @@ a {
   margin-left: 40px;
   font-family: "Source Code Pro", monospace;
   font-size: 600;
-  transition: 1s;
+  transition: 0.8s;
+  width: 700px;
   opacity: 0;
   padding-top: 50px;
   margin-left: 30px;
@@ -984,15 +1001,16 @@ a {
   border-bottom-right-radius: 15px;
 }
 .owasp-1 {
-  display: inline;
-  margin-top: 50px;
+  margin-left: 40px;
   font-family: "Source Code Pro", monospace;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  font-size: 32px;
-  font-weight: 600;
-  margin-left: 550px;
+  font-size: 600;
+  transition: 0.8s;
+  width: 700px;
+  opacity: 0;
+  padding-top: 50px;
+  margin-left: 30px;
   position: absolute;
+  
 }
 .owasp-img2 {
   display: inline;

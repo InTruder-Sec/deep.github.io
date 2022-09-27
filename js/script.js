@@ -21,6 +21,8 @@ function out() {
     document.getElementById("owasp-head").style.backgroundColor = "rgb(52, 45, 45)";
     document.getElementById("h1-head").style.transition = "background 1s ease";
     document.getElementById("h1-head").style.backgroundColor = "rgb(52, 45, 45)";
+    document.getElementById("vtf-img1").style.opacity = "1";
+    document.getElementById("head1").style.opacity = "1";
 }
 
 function funClose() {
@@ -71,9 +73,31 @@ function vtfDiscription() {
     document.getElementById("close-arrow2").style.opacity = "1";
 }
 
+
 function owaspDiscription() {
-    document.getElementById("owasp-modal").style.display = "block";
+    document.getElementById("vtf-image").style.height = "100%";
+    document.getElementById("vtf-dis").style.height = "100%";
+    document.getElementById("exit").style.display = "block";
+    document.getElementById("vtf-dis").style.zIndex = "4";
+    document.getElementById("hide").style.opacity = "1";
+    document.getElementById("close-arrow").style.rotate = "45deg";
+    document.getElementById("close-arrow").style.opacity = "1";
+    document.getElementById("close-arrow2").style.rotate = "135deg";
+    document.getElementById("close-arrow2").style.opacity = "1";
 }
+function closeOWASP() {
+    document.getElementById("vtf-dis").style.height = "0%";
+    document.getElementById("vtf-image").style.height = "0%";
+    document.getElementById("close-arrow").style.rotate = "90deg";
+    document.getElementById("close-arrow").style.opacity = "0";
+    document.getElementById("close-arrow2").style.rotate = "0deg";
+    document.getElementById("close-arrow2").style.opacity = "0";
+    document.getElementById("hide").style.opacity = "0";
+    document.getElementById("vtf-dis").style.zIndex = "-4";
+    document.getElementById("vtf-img1").style.opacity = "0";
+    document.getElementById("head1").style.opacity = "0";
+}
+
 
 function h1Discription() {
     document.getElementById("h1-modal").style.display = "block";
@@ -130,4 +154,6 @@ function closevtf() {
     document.getElementById("close-arrow2").style.opacity = "0";
     document.getElementById("hide").style.opacity = "0";
     document.getElementById("vtf-dis").style.zIndex = "-4";
+    document.getElementById("vtf-img1").style.opacity = "0";
+    document.getElementById("head1").style.opacity = "0";
 }
