@@ -75,7 +75,7 @@ function vtfDiscription() {
 
 
 function owaspDiscription() {
-    document.getElementById("vtf-image").style.height = "100%";
+    document.getElementById("owasp-image").style.height = "100%";
     document.getElementById("vtf-dis").style.height = "100%";
     document.getElementById("exit").style.display = "block";
     document.getElementById("vtf-dis").style.zIndex = "4";
@@ -87,7 +87,7 @@ function owaspDiscription() {
 }
 function closeOWASP() {
     document.getElementById("vtf-dis").style.height = "0%";
-    document.getElementById("vtf-image").style.height = "0%";
+    document.getElementById("owasp-image").style.height = "0%";
     document.getElementById("close-arrow").style.rotate = "90deg";
     document.getElementById("close-arrow").style.opacity = "0";
     document.getElementById("close-arrow2").style.rotate = "0deg";
@@ -95,7 +95,7 @@ function closeOWASP() {
     document.getElementById("hide").style.opacity = "0";
     document.getElementById("vtf-dis").style.zIndex = "-4";
     document.getElementById("vtf-img1").style.opacity = "0";
-    document.getElementById("head1").style.opacity = "0";
+    document.getElementById("head2").style.opacity = "0";
 }
 
 

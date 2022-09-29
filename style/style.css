@@ -658,6 +658,29 @@ a {
   transition: 1s;
 }
 
+.display-owasp-img {
+  height: 0%;
+  width: 30%;
+  bottom: 0;
+  opacity: 1;
+  position: fixed;
+  background-color: rgb(238, 29, 29);
+  z-index: 4;
+  transition: 1s;
+}
+
+.display--img {
+  height: 0%;
+  width: 30%;
+  bottom: 0;
+  opacity: 1;
+  position: fixed;
+  background-color: rgb(238, 29, 29);
+  z-index: 4;
+  transition: 1s;
+}
+
+
 .vtf-dis {
   height: 0px;
   background-color: rgb(23, 23, 23);
