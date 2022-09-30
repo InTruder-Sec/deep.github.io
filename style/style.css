@@ -3,8 +3,8 @@
 }
 
 html {
-  scroll-behavior: smooth;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 ::-moz-selection {
   color: white;
