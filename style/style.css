@@ -1807,13 +1807,13 @@ a {
 
 label .menu {
   position: absolute;
-  right: -100px;
-  top: -100px;
+  right: 0px;
+  top: 0px;
   z-index: 3;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   background: #FFF;
-  border-radius: 50% 50% 50% 50%;
+  border-bottom-left-radius: 100%;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
@@ -1823,7 +1823,7 @@ label .menu {
 
 label .hamburger {
   position: absolute;
-  top: 135px;
+  top: 35px;
   left: 50px;
   width: 30px;
   height: 2px;
@@ -2032,6 +2032,7 @@ label a {
 }
 
 @media screen and (max-width: 500px) {
+
   .catagories {
     margin-left: 30px !important;
   }
