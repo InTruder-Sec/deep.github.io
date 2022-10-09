@@ -85,19 +85,6 @@ function owaspDiscription() {
     document.getElementById("close-arrow2").style.rotate = "135deg";
     document.getElementById("close-arrow2").style.opacity = "1";
 }
-function closeOWASP() {
-    document.getElementById("vtf-dis").style.height = "0%";
-    document.getElementById("owasp-image").style.height = "0%";
-    document.getElementById("close-arrow").style.rotate = "90deg";
-    document.getElementById("close-arrow").style.opacity = "0";
-    document.getElementById("close-arrow2").style.rotate = "0deg";
-    document.getElementById("close-arrow2").style.opacity = "0";
-    document.getElementById("hide").style.opacity = "0";
-    document.getElementById("vtf-dis").style.zIndex = "-4";
-    document.getElementById("vtf-img1").style.opacity = "0";
-    document.getElementById("head2").style.opacity = "0";
-}
-
 
 function h1Discription() {
     document.getElementById("h1-modal").style.display = "block";
@@ -140,6 +127,10 @@ function new1_funSmall() {
 
 function new1_funMin() {
     document.getElementById("new1_min").textContent = "+";
+}
+
+function outOWASP() {
+    document.getElementById("owasp-head").style.backgroundColor = "rgb(52, 45, 45)";
 }
 
 function displayAbout() {
