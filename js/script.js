@@ -74,17 +74,6 @@ function vtfDiscription() {
 }
 
 
-function owaspDiscription() {
-    document.getElementById("owasp-image").style.height = "100%";
-    document.getElementById("owasp-dis").style.height = "100%";
-    document.getElementById("exit").style.display = "block";
-    document.getElementById("owasp-dis").style.zIndex = "4";
-    document.getElementById("hide").style.opacity = "1";
-    document.getElementById("close-arrow").style.rotate = "45deg";
-    document.getElementById("close-arrow").style.opacity = "1";
-    document.getElementById("close-arrow2").style.rotate = "135deg";
-    document.getElementById("close-arrow2").style.opacity = "1";
-}
 
 function h1Discription() {
     document.getElementById("h1-modal").style.display = "block";
