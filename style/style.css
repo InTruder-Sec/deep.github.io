@@ -659,16 +659,7 @@ a {
   transition: 1s;
 }
 
-.display-owasp-img {
-  height: 0%;
-  width: 30%;
-  bottom: 0;
-  opacity: 1;
-  position: fixed;
-  background-color: rgb(238, 29, 29);
-  z-index: 4;
-  transition: 1s;
-}
+
 
 .display--img {
   height: 0%;
@@ -1088,6 +1079,29 @@ a {
 }
 .owasp-list {
   list-style: disc;
+}
+
+.owasp-dis-image {
+  height: 0%;
+  margin-left: 0%;
+  background-color: rgb(1, 1, 252);
+  width: 30%;
+  bottom: 0;
+  z-index: 4;
+  position: fixed;
+  transition-duration: 1s;
+}
+
+.owasp-dis-con {
+  height: 0%;
+  margin-left: 30%;
+  background-color: rgb(23, 23, 23);
+  width: 70%;
+  margin-top: 0;
+  top: 0;
+  z-index: 4;
+  position: fixed;
+  transition-duration: 1s;
 }
 
 

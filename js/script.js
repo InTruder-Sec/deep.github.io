@@ -73,6 +73,16 @@ function vtfDiscription() {
     document.getElementById("close-arrow2").style.opacity = "1";
 }
 
+function owaspDiscription() {
+    document.getElementById("exit").style.display = "block";
+    document.getElementById("owasp-dis-image").style.height = "100%";
+    document.getElementById("owasp-dis-con").style.height = "100%";
+    document.getElementById("hide").style.opacity = "1";
+    document.getElementById("close-arrow").style.rotate = "45deg";
+    document.getElementById("close-arrow").style.opacity = "1";
+    document.getElementById("close-arrow2").style.rotate = "135deg";
+    document.getElementById("close-arrow2").style.opacity = "1";
+}
 
 
 function h1Discription() {
