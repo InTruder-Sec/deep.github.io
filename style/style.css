@@ -686,6 +686,25 @@ a {
 .close-button {
   display: none;
 }
+
+.o-close-button {
+  display: none;
+}
+.o-close-arrow {
+  width: 3px;
+  position: absolute;
+  border-radius: 3px;
+  height: 30px;
+  opacity: 1;
+  margin-top: 30px;
+  margin-left: 95%;
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+  transition-delay: 1.3s;
+  transition: 1.5s;
+  rotate: 90deg;
+}
+
 .close-arrow {
   width: 3px;
   position: absolute;
@@ -709,6 +728,16 @@ a {
   margin-left: 94%;
   margin-top: 30px;
   z-index: 5;
+}
+
+.o-exit-hidden {
+
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  margin-left: 94%;
+  margin-top: 30px;
+  z-index: 155;
 }
 
 .img-vtf {
@@ -742,6 +771,20 @@ a {
   background-color: rgb(255, 255, 255);
 }
 
+.o-close-arrow2 {
+  width: 3px;
+  border-radius: 3px;
+  height: 30px;
+  opacity: 1;
+  margin-top: 30px;
+  margin-left: 95%;
+  position: absolute;
+  rotate: 0deg;
+  transition-delay: 1.3s;
+  transition: 1.5s;
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+}
 
 
 .vtf-exp {
