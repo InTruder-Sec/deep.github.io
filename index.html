@@ -89,53 +89,55 @@
         <div id="experience" class="experience">
             <div class="experience-head">My Experience</div>
             <div class="title-experience">Experience</div>
+            
             <div>
                 <div class="vtf-dis" id="vtf-dis">
+                    
                     <div class="exit">
-                        <div class="close-button" id="exit" onclick="closevtf()">
+                        <div class="exit-hidden" onclick="closevtf()"></div>
+                        <div class="close-button" id="exit" >
                             <div id="close-arrow" class="close-arrow"></div>
-                            <div class="close-arrow2"></div>
+                            <div class="close-arrow2" id="close-arrow2"></div>
                         </div>
                     </div>
+                    <div id="hide" class="vtf-1"><h2>CYBER SECURITY INTERN</h2><br>
+                        <div>Cyber Security Intern</div><br><div class="vtf3">JAN 18 2021 - MAR 18 2021</div>
+                        <br><br><br><br>
+                    <div>
+                        VTF is a California, USA based 501(c)3 nonprofit volunteer-run organization. Over the internship period I have completed,<br><br><br>
+                        <ul>
+                            <li>●  Kube Academy Courses</li><br>
+                            <li>●  Hands-on lab learning</li><br>
+                            <li>●  Digital and social media marketing</li><br>
+                            <li>●  Captured minutes of meeting and had team collaborations</li><br>
+                        </ul>
+                    </div>
+                    </div>
                 </div>
-  
+                <div class="display-vtf-img" id="vtf-image">
+                    <img id="vtf-img1" width="90%" class="img-vtf" src="./src/vtf-image.png">
+                    <div id="head1" class="vtf-headline"><h2>VIRTUAL TESTING FOUNDATION, CALIFORNIA</h2></div>
+                    
+                </div>
             </div>
+
+
             <div class="vtf-exp" onclick="vtfDiscription()" onmouseover="displayVtf()" onmouseout="out()">
                 <img class="vtf-img" height="350px" width="350px" src="./src/vtf-image.png"
                     alt="Virtual Testing Foundation">
                 <div class="vtf-head" id="vtf-head">
                     <div class="vtf-border"></div>
-                    <div class="vtf-title">Virtual Testing Foundation California</div>
-                    <div class="vtf-location">Remote</div>
-                    <div class="vtf-role">Cybersecurity Intern</div>
+                    <div class="vtf-title">Virtual Testing Foundation</div>
+                    <div class="vtf-location">CALIFORNIA</div>
+                    <div class="vtf-role">CYBERSECURITY INTERN</div>
                 </div>
             </div>
-            <div class="owasp-modal" id="owasp-modal">
-                <div id="owasp-discription" class="owasp-discription">
-                    <div class="navigation-terminal">
-                        <div class="new_close" onclick="closeM()" onmouseover="new_funClose()" onmouseout="remove()" id="new_close"></div>
-                        <div class="new_small" onclick="closeM()" onmouseover="new_funSmall()" onmouseout="remove()" id="new_small"></div>
-                        <div class="new_min" onclick="closeM()" onmouseover="new_funMin()" onmouseout="remove()" id="new_min"></div>
-                    </div>
-                    <div class="modal-content">
-                        
-                        <div class="owasp-img2"><img src="./src/owasp-img.jpg" height="300px" style="padding: 80px;" alt="OWASP image"></div>
-                        <div class="owasp-1"><u>OWASP Chapter PCCOE</u></div>
-                        <div class="owasp2">Security & CTF Team Lead</div><div class="owasp3">JULY 25 2021 - CURRENT</div>
-                        <div class="owasp4">PCCOE</div>
-                        <div class="owasp5">
-                            The Open Web Application Security Project® (OWASP) is a nonprofit foundation that works to improve the security of software. Being a part of Security & CTF Team, my responsibilites are,<br>
-                            <ul class="owasp-list">
-                                <li>●  Organize Tech-talks</li><br>
-                                <li>●  Lead University CTF Team</li><br>
-                                <li>●  Organize Security Workshops & Bootcamps</li><br>
-                                <li>●  Create Awareness Regarding Security Domain</li><br>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="owasp-exp" onclick="owaspDiscription()" onmouseover="displayOwasp()" onmouseout="out()">
+            
+            <!--Under Construction-->
+            
+
+            
+            <div class="owasp-exp" onclick="owaspDiscription()" onmouseover="displayOwasp()" onmouseout="outOWASP()">
                 <img src="./src/owasp-img.png" class="owasp-img" height="350px" width="350px" alt="OWASP">
                 <div class="owasp-head" id="owasp-head">
                     <div class="owasp-border"></div>
@@ -144,31 +146,26 @@
                     <div class="owasp-role">Head of Security Team</div>
                 </div>
             </div>
-            <div class="h1-modal" id="h1-modal">
-                <div id="h1-discription" class="h1-discription">
-                    <div class="navigation-terminal">
-                        <div class="new1_close" onclick="closeM()" onmouseover="new1_funClose()" onmouseout="remove()" id="new1_close"></div>
-                        <div class="new1_small" onclick="closeM()" onmouseover="new1_funSmall()" onmouseout="remove()" id="new1_small"></div>
-                        <div class="new1_min" onclick="closeM()" onmouseover="new1_funMin()" onmouseout="remove()" id="new1_min"></div>
-                    </div>
-                    <div class="modal-content">
-                        
-                        <div class="h1-img2"><img src="./src/h1.png" height="300px" style="padding: 80px;" alt="OWASP image"></div>
-                        <div class="h1-1"><u>H@ctivitycon-2021 Rank 45th</u></div>
-                        <div class="h12">CTF Team Lead</div><div class="owasp3">SEPT 17 2021 - SEPT 19 2021</div>
-                        <div class="h14">REMOTE</div>
-                        <div class="h15">
-                            H@ctivitycon is a HackerOne hosted hacker conference built by the community for the community. We scored 5527 points and stood 45th all over world. We PWNed the following catagories,<br>
-                            <ul class="h1-list">
-                                <li>●  Forensics, OSINT</li><br>
-                                <li>●  Web Vulnerabilities</li><br>
-                                <li>●  Cryptography, Reverse Engineering</li><br>
-                                <li>●  Mobile App Vulnerabilities</li><br>
-                            </ul>
+
+
+            <div class="owasp-main" id="owasp-main">
+                <div class="owasp-dis-image" id="owasp-dis-image">
+                    <!--image of OWASP-->
+                </div>
+                <div class="owasp-dis-con" id="owasp-dis-con">
+                    <!--Content of owasp-->
+                    <div class="o-exit">
+                        <div class="o-exit-hidden" onclick="closevtf()"></div>
+                        <div class="o-close-button" id="exit" >
+                            <div id="o-close-arrow" class="close-arrow"></div>
+                            <div class="o-close-arrow2" id="close-arrow2"></div>
                         </div>
                     </div>
                 </div>
             </div>
+
+
+
             <div class="h1-exp" onclick="h1Discription()" onmouseover="displayhacker()" onmouseout="out()">
                 <img src="./src/h1.jpg" class="h1-img" height="350px" width="350px" alt="Hacker One">
                 <div class="h1-head" id="h1-head">
@@ -208,7 +205,7 @@
         </div>
         <div class="skills-list">
             <div class="skill-j">
-                My Jorneny
+                My JOURNEY
             </div>
             <div class="time-line-1">
                 MAR 2019
