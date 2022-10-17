@@ -873,6 +873,9 @@ a {
   margin-left: 30px;
   background-color: rgb(52, 45, 45);
 }
+
+
+
 .owasp-title {
   align-self: center;
   margin-left: 40px;
@@ -1133,6 +1136,11 @@ a {
   z-index: 4;
   position: fixed;
   transition-duration: 1s;
+}
+.owasp-close-arr {
+  height: 30px;
+  width: 10px;
+  background-color: wheat;
 }
 
 .owasp-dis-con {
