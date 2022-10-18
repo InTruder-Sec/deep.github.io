@@ -1138,9 +1138,33 @@ a {
   transition-duration: 1s;
 }
 .owasp-close-arr {
+  width: 3px;
+  position: absolute;
+  border-radius: 3px;
   height: 30px;
-  width: 10px;
-  background-color: wheat;
+  margin-top: 30px;
+  margin-left: 95%;
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+  transition-delay: 1.3s;
+  transition: 1.5s;
+  opacity: 0;
+  rotate: 90deg;
+}
+
+.owasp-close-arr2 {
+    width: 3px;
+    border-radius: 3px;
+    height: 30px;
+    margin-top: 30px;
+    margin-left: 95%;
+    position: absolute;
+    rotate: 0deg;
+    opacity: 0;
+    transition-delay: 1.3s;
+    transition: 1.5s;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
 }
 
 .owasp-dis-con {
