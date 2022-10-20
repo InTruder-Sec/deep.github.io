@@ -80,11 +80,17 @@ function owaspDiscription() {
     document.getElementById("owaspClose2").style.rotate = "45deg";
     document.getElementById("owaspClose").style.opacity = "1";
     document.getElementById("owaspClose2").style.opacity = "1";
+    document.getElementById("owaspImg").style.opacity = "1";
 }
 
 function owaspExit() {
     document.getElementById("owaspdisimage").style.height = "0%";
     document.getElementById("owaspdiscon").style.height = "0%";
+    document.getElementById("owaspClose2").style.rotate = "90deg";
+    document.getElementById("owaspClose2").style.opacity = "0";
+    document.getElementById("owaspClose").style.rotate = "0deg";
+    document.getElementById("owaspClose").style.opacity = "0";
+    document.getElementById("owaspImg").style.opacity = "0";
 }
 
 
@@ -150,3 +156,4 @@ function closevtf() {
     document.getElementById("vtf-img1").style.opacity = "0";
     document.getElementById("head1").style.opacity = "0";
 }
+
