@@ -81,6 +81,7 @@ function owaspDiscription() {
     document.getElementById("owaspClose").style.opacity = "1";
     document.getElementById("owaspClose2").style.opacity = "1";
     document.getElementById("owaspImg").style.opacity = "1";
+    document.getElementById("owasp-exit").style.zIndex = "4";
 }
 
 function owaspExit() {
@@ -91,6 +92,7 @@ function owaspExit() {
     document.getElementById("owaspClose").style.rotate = "0deg";
     document.getElementById("owaspClose").style.opacity = "0";
     document.getElementById("owaspImg").style.opacity = "0";
+    document.getElementById("owasp-exit").style.zIndex = "-100";
 }
 
 
