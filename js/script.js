@@ -83,7 +83,13 @@ function owaspDiscription() {
     document.getElementById("owaspClose2").style.opacity = "1";
     document.getElementById("owaspImg").style.opacity = "1";
     document.getElementById("owasp-exit").style.zIndex = "4";
-    document.getElementById("owasphide").style.opacity = "1";
+    document.getElementById("owasphide").style.display = "block";
+    var logMe = function () {
+        document.getElementById("owasphide").style.opacity = "1";
+    };
+    setTimeout(logMe, 200);
+    
+    
 }
 
 function owaspExit() {
@@ -95,6 +101,10 @@ function owaspExit() {
     document.getElementById("owaspClose").style.opacity = "0";
     document.getElementById("owaspImg").style.opacity = "0";
     document.getElementById("owasp-exit").style.zIndex = "-100";
+    var logMe = function () {
+        document.getElementById("owasphide").style.display = "none";
+    };
+    setTimeout(logMe, 200);
     document.getElementById("owasphide").style.opacity = "0";
 }
 

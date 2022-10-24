@@ -1202,6 +1202,8 @@ a {
   opacity: 0;
   padding-top: 0px;
   margin-left: 30px;
+  z-index: -3;
+  display: none;
   position: absolute;
   
 }
