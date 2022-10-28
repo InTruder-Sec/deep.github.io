@@ -1131,7 +1131,7 @@ a {
 .h1-dis-image {
   height: 0%;
   margin-left: 0%;
-  background-color: rgb(1, 1, 252);
+  background-color: purple;
   width: 30%;
   bottom: 0;
   z-index: 4;
@@ -1282,6 +1282,21 @@ a {
   opacity: 1;
   padding-left: 20px;
   transition: 1.5s;
+}
+
+.h1-script {
+  margin-left: 40px;
+  font-family: "Source Code Pro", monospace;
+  font-size: 600;
+  transition: 0.8s;
+  width: 700px;
+  opacity: 0;
+  padding-top: 0px;
+  margin-left: 30px;
+  z-index: -3;
+  display: none;
+  position: absolute;
+  
 }
 
 .h1-headline{

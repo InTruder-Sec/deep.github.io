@@ -107,10 +107,35 @@ function owaspExit() {
     setTimeout(logMe, 200);
     document.getElementById("owasphide").style.opacity = "0";
 }
-
-
+function h1Exit() {
+    document.getElementById("h1disimage").style.height = "0%";
+    document.getElementById("h1discon").style.height = "0%";
+    document.getElementById("h1Close2").style.rotate = "90deg";
+    document.getElementById("h1Close2").style.opacity = "0";
+    document.getElementById("h1Close").style.rotate = "0deg";
+    document.getElementById("h1Close").style.opacity = "0";
+    document.getElementById("h1Img").style.opacity = "0";
+    document.getElementById("h1-exit").style.zIndex = "-100";
+    var logMeh = function () {
+        document.getElementById("h1hide").style.display = "none";
+    };
+    setTimeout(logMeh, 200);
+    document.getElementById("h1hide").style.opacity = "0";
+}
 function h1Discription() {
-    document.getElementById("h1-modal").style.display = "block";
+    document.getElementById("h1disimage").style.height = "100%";
+    document.getElementById("h1discon").style.height = "100%";
+    document.getElementById("h1Close").style.rotate = "135deg";
+    document.getElementById("h1Close2").style.rotate = "45deg";
+    document.getElementById("h1Close").style.opacity = "1";
+    document.getElementById("h1Close2").style.opacity = "1";
+    document.getElementById("h1Img").style.opacity = "1";
+    document.getElementById("h1-exit").style.zIndex = "4";
+    document.getElementById("h1hide").style.display = "block";
+    var logMeh = function () {
+        document.getElementById("h1hide").style.opacity = "1";
+    };
+    setTimeout(logMeh, 200);   
 }
 
 function closeM() {
