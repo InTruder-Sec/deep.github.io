@@ -107,6 +107,7 @@ function owaspExit() {
     setTimeout(logMe, 200);
     document.getElementById("owasphide").style.opacity = "0";
 }
+// Under construction
 function h1Exit() {
     document.getElementById("h1disimage").style.height = "0%";
     document.getElementById("h1discon").style.height = "0%";
