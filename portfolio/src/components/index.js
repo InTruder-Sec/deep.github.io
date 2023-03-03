@@ -4,7 +4,7 @@ import heroImg from "../images/v8_35.jpg";
 import expcardimg1 from "./../images/vtf-image.png";
 import expcardimg2 from './../images/owasp-img.png';
 import expcardimg3 from './../images/h1.jpg';
-
+let isEnabled = "";
 
 export default function Index() {
     return (
@@ -14,6 +14,7 @@ export default function Index() {
         <AboutMe/>
         <Experience />
         <Skills />
+        <Projects />
       </div>
     )
 }
@@ -24,14 +25,51 @@ function NavBar() {
         <div className="Nav">
             
             <div className="Nav-place">
-            <div className="Nav-content Nav--about">ABOUT</div>
-                <div className="Nav-content Nav--exp">EXPERIENCE</div>
-                <div className="Nav-content Nav--socials">SOCIALS</div>
-                <div className="Nav-content Nav--skills">SKILLS</div>
-                <div className="Nav-content Nav--projects">PROJECTS</div>
+            <div className="Nav-content Nav--about" id="Nav--about" onMouseEnter={e=> {SwitchCase("Nav--about")}} ><a href="#"> ABOUT </a></div>
+                <div className="Nav-content Nav--exp" id="Nav--exp" onMouseEnter={e=> {SwitchCase("Nav--exp")}}>EXPERIENCE</div>
+                <div className="Nav-content Nav--skills" id="Nav--skills" onMouseEnter={e=> {SwitchCase("Nav--skills")}}>SKILLS</div>
+                <div className="Nav-content Nav--projects" id="Nav--projects" onMouseEnter={e=> {SwitchCase("Nav--projects")}}>PROJECTS</div>
+                <div className="Nav-content Nav--socials" id="Nav--socials" onMouseEnter={e=> {SwitchCase("Nav--socials")}}>SOCIALS</div>
             </div>
         </div>
+        
     )
+}
+
+
+function SwitchCase(x) {
+    if (isEnabled !== x) {
+        isEnabled = x;
+        const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+        let t =document.getElementById(x)
+        let word = t.innerText
+        let loop = (word.length-1)*4
+        let subCount = 1
+        let newWord ="";
+        let random;
+        let crCount
+        let Timer = setInterval(() => {
+            for (let r=0; r<word.length; r++) {
+                crCount = r*4 - subCount;
+                if (crCount<=0) {
+                    newWord = newWord + word[r];
+                } else {
+                    random = Math.floor(Math.random()*26)
+                    newWord = newWord + alphabet[random]
+                }
+
+            }
+            subCount ++;
+            t.innerText = newWord
+            newWord = ""
+            if (loop-subCount === 0) {
+                t.innerText = word;
+                isEnabled = "";
+                clearInterval(Timer);
+            }
+        }, 50);
+    }
+    
 }
 
 function Hero() {
@@ -67,7 +105,7 @@ function AboutMe() {
                 Hey there, my name is Deep and I am an Ethical Hacker based in Pune. Currently, I am pursuing a B.Tech degree in Mechanical Engineering at Pimpri Chinchwad College of Engineering, Pune.<br/><br/>
                 I am a part of the Security Team at OWASP Chapter PCCoE. Looking for a job in the Red Team of a company. Being a greedy learner, I love to explore how things work around me.<br/><br/>
                 To find out more about me check out my socials.<br/>
-                <a href="/#socials"><button class="contact-us socials-button">Socials</button></a>
+                <a href="/#socials"><button className="contact-us socials-button">Socials</button></a>
             </div>
         </div>
     )
@@ -84,6 +122,7 @@ function Experience() {
                 loc={item.loc}
                 img={item.img}
                 color={item.color}
+                key={item.title}
             />
         )
     })
@@ -152,6 +191,16 @@ const ExpData = [
 
 
 function Skills() {
+    const listSkill = SkillData.map(item => {
+        return (
+            <SkillList
+                key={item.id}
+                count={item.count}
+                date={item.date}
+                sl={item.sl}
+              />
+        )
+    })
     return (
         <div className="skills">
             <CreateHead head="skills" title="My Skills" />
@@ -162,6 +211,15 @@ function Skills() {
                 <SkillCard color="yellow" level="P3 - [4-7] Medium"/>
                 <SkillCard color="greenyellow" level="P4 - [1-4] Low" />
             </div>
+            <div className="skills-list">
+                <div className="skill--list--Jor">My Journey</div>
+                {listSkill}
+                <div className="skill--end">
+                    <div className="skill--end--hr"/>
+                    <div className="skill--end--hr2"/>
+                    <div className="skill--end--hr3"/>
+                </div>
+            </div>
         </div>
     )
 }
@@ -171,6 +229,160 @@ function SkillCard(props) {
         <div className="skill--card">
             <div className="skill--card--color" style={{backgroundColor: props.color }} ></div>
             <div className="skill--card--dis">{props.level}</div>
+        </div>
+    )
+}
+
+function SkillList(props) {
+    const newList = props.sl.map(item => {
+        return (
+            <SkillCard 
+                color={item.color}
+                level={item.level}
+                key={item.level}
+            />
+        )
+    })
+    return (
+        <div className="skill--list--card">
+            <div className="skill--list--date">{props.date}</div>
+            <div className="skill--list--hr" style={{height: props.count*100}} />
+            <div className="skill--li--card">
+                {newList}
+            </div>
+            
+        </div>
+    )
+}
+
+
+const SkillData = [
+    {
+        id: 0,
+        count: 2,
+        date: "Mar 2019",
+        sl: [
+            {
+                color: "red",
+                level: "HTML5 & CSS",
+            },
+            {
+                color: "blue",
+                level: "JAVASCRIPT"
+            }
+        ]
+    },
+    {
+        id: 1,
+        count: 2,
+        date: "JAN 2020",
+        sl: [
+            {
+                color: "blue",
+                level: "LINUX",
+            },
+            {
+                color: "blue",
+                level: "C++"
+            }
+        ]
+    },
+    {
+        id: 2,
+        count: 1,
+        date: "MAR 2020",
+        sl: [
+            {
+                color: "red",
+                level: "BURPSUITE",
+            }
+        ]
+    },
+    {
+        id: 3,
+        count: 1,
+        date: "OCT 2020",
+        sl: [
+            {
+                color: "red",
+                level: "OWASP TOP 10 WEB VULNERABILITIES",
+            }
+        ]
+    },
+    {
+        id: 4,
+        count: 1,
+        date: "JAN 2021",
+        sl: [
+            {
+                color: "blue",
+                level: "ETHICAL HACKING",
+            }
+        ]
+    },
+    {
+        id: 5,
+        count: 3,
+        date: "APRIL 2021",
+        sl: [
+            {
+                color: "yellow",
+                level: "MY-SQL",
+            },
+            {
+                color: "greenyellow",
+                level: "NETWORK SECURITY"
+            },
+            {
+                color: "red",
+                level: "PYTHON"
+            }
+        ]
+    },
+    {
+        id: 6,
+        count: 1,
+        date: "MAR 2022",
+        sl: [
+            {
+                color: "blue",
+                level: "FIREBASE",
+            }
+        ]
+    },
+    {
+        id: 7,
+        count: 1,
+        date: "MAY 2022",
+        sl: [
+            {
+                color: "blue",
+                level: "REACT",
+            }
+        ]
+    },
+    {
+        id: 8,
+        count: 2,
+        date: "AUG 2022",
+        sl: [
+            {
+                color: "yellow",
+                level: "DJANGO FRAMEWORK",
+            },
+            {
+                color: "greenyellow",
+                level: "FIGMA"
+            }
+        ]
+    },
+]
+
+
+function Projects() {
+    return (
+        <div className="projects">
+            <CreateHead head="projects" title="My Projects" />
         </div>
     )
 }
