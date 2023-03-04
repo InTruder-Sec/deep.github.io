@@ -196,6 +196,7 @@ body {
   font-size: 150px;
   color: black;
   margin-top: 100px;
+  width: min-content;
   text-transform: uppercase;
   margin-left: 20px;
   font-family: "Source Code Pro", monospace;
@@ -377,4 +378,121 @@ body {
   width: 2px;
   background-color: rgb(181, 181, 181);
   margin-left: 269px;
+}
+
+.project--card--svg {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+.project--card {
+  margin-left: 10%;
+  margin-top: 100px;
+}
+
+.project--card-no {
+  color: #dd3737;
+  font-family: "Source Code Pro", monospace;
+  font-size: 20px;
+  margin-left: 110px;
+  margin-top: 120px;
+}
+
+.project--card--head {
+  font-family: "Source Code Pro", monospace;
+  font-size: 30px;
+  margin-left: 110px;
+  padding-right: 10px;
+}
+
+.project--details {
+  position: absolute;
+  height: 300px;
+}
+
+.project--details--head {
+  font-family: "Source Code Pro", monospace;
+  font-size: 18px;
+  margin-left: 110px;
+  color: aqua;
+  transition: 0.8s;
+  margin-top: 60px;
+}
+
+.project--details--contains {
+  font-family: "Source Code Pro", monospace;
+  font-size: 18px;
+  margin-top: 30px;
+  margin-left: 110px;
+  width: 350px;
+}
+
+.project--link {
+  position: absolute;
+  height: 300px;
+  padding-top: 60px;
+  margin-left: 580px;
+}
+
+.project--link--head {
+  font-size: 18px;
+  transition: 0.8s;
+  color: aqua;
+  padding-bottom: 30px;
+}
+
+.project--link--a {
+  font-size: 18px;
+  width: 200px;
+}
+
+.project--tech {
+  margin-left: 1000px;
+}
+
+.project--card--details {
+  height: 280px;
+}
+
+.socials--head {
+  font-size: 20px;
+  margin-left: 10%;
+  margin-top: 60px;
+}
+
+.socials--design {
+  position: absolute;
+  width: 300px;
+  height: 80px;
+}
+
+.socials--design--div {
+  width: 4px;
+  height: 80px;
+  transition: 0.8s;
+  background-color: red;
+}
+
+.socials--design:hover .socials--design--div {
+  width: 300px;
+  opacity: 0.4;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.socials--card {
+  width: 300px;
+  height: 80px;
+  margin-top: 50px;
+  margin-left: 10px;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: rgb(52, 45, 45);
+}
+
+.socials--dis {
+  padding-top: 25px;
+  font-size: 20px;
+  padding-left: 70px;
 }

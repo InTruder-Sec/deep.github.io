@@ -4,6 +4,8 @@ import heroImg from "../images/v8_35.jpg";
 import expcardimg1 from "./../images/vtf-image.png";
 import expcardimg2 from './../images/owasp-img.png';
 import expcardimg3 from './../images/h1.jpg';
+import GearImg from "./../images/gears.png"
+
 let isEnabled = "";
 
 export default function Index() {
@@ -15,6 +17,7 @@ export default function Index() {
         <Experience />
         <Skills />
         <Projects />
+        <Socials />
       </div>
     )
 }
@@ -25,11 +28,11 @@ function NavBar() {
         <div className="Nav">
             
             <div className="Nav-place">
-            <div className="Nav-content Nav--about" id="Nav--about" onMouseEnter={e=> {SwitchCase("Nav--about")}} ><a href="#"> ABOUT </a></div>
-                <div className="Nav-content Nav--exp" id="Nav--exp" onMouseEnter={e=> {SwitchCase("Nav--exp")}}>EXPERIENCE</div>
-                <div className="Nav-content Nav--skills" id="Nav--skills" onMouseEnter={e=> {SwitchCase("Nav--skills")}}>SKILLS</div>
-                <div className="Nav-content Nav--projects" id="Nav--projects" onMouseEnter={e=> {SwitchCase("Nav--projects")}}>PROJECTS</div>
-                <div className="Nav-content Nav--socials" id="Nav--socials" onMouseEnter={e=> {SwitchCase("Nav--socials")}}>SOCIALS</div>
+                <a href="#"><div className="Nav-content Nav--about" id="Nav--about" onMouseEnter={e=> {SwitchCase("Nav--about")}} > ABOUT </div></a>
+                <a href="#"><div className="Nav-content Nav--exp" id="Nav--exp" onMouseEnter={e=> {SwitchCase("Nav--exp")}}>EXPERIENCE</div></a>
+                <a href="#"><div className="Nav-content Nav--skills" id="Nav--skills" onMouseEnter={e=> {SwitchCase("Nav--skills")}}>SKILLS</div></a>
+                <a href="#"><div className="Nav-content Nav--projects" id="Nav--projects" onMouseEnter={e=> {SwitchCase("Nav--projects")}}>PROJECTS</div></a>
+                <a href="#"><div className="Nav-content Nav--socials" id="Nav--socials" onMouseEnter={e=> {SwitchCase("Nav--socials")}}>SOCIALS</div></a>
             </div>
         </div>
         
@@ -141,8 +144,8 @@ function Experience() {
 function CreateHead(props) {
     return (
         <div className="HeadLine">
-            <div className="headline--title"> {props.title} </div>
-            <div className="headline--head"> {props.head} </div>
+            <div className="headline--title"  > {props.title} </div>
+            <div className="headline--head" id={props.title} onMouseEnter={e => {SwitchCase(props.title)}} > {props.head} </div>
         </div>
     )
 }
@@ -380,9 +383,111 @@ const SkillData = [
 
 
 function Projects() {
+    const ProjectCardDetails = ProjectData.map(item => {
+        return (
+            <ProjectCard 
+                id={item.id}
+                title={item.title}
+                link={item.link}
+                details={item.details}
+                tools={item.tools}
+                key={item.id}
+            />
+        )
+    })
     return (
         <div className="projects">
             <CreateHead head="projects" title="My Projects" />
+            {ProjectCardDetails}
+        </div>
+    )
+}
+
+function ProjectCard(props) {
+    const toolsDetails = props.tools.map(item => {
+        return(
+            <div className="project--tool">
+                {item}
+            </div>
+        )
+    })
+    return (
+        <div className="project--card">
+            <div className="project--card--svg">
+                <img src={GearImg} className="project--card--svg" alt="gears"></img>
+            </div>
+            <div className="project--card-no"> {props.id} </div>
+            <div className="project--card--head"> {props.title} </div>
+            <div className="project--card--details">
+                <div className="project--details">
+                    <div className="project--details--head"> Project Details </div>
+                    <div className="project--details--contains"> {props.details} </div>
+                </div>
+                <div className="project--link">
+                    <div className="project--link--head">Project Link</div>
+                    <div className="project--link--a"> 
+                    <a href={"https://" + props.link} target="_blank" >{props.link} </a></div>
+                </div>
+                <div className="project--link project--tech">
+                    <div className="project--link--head">Tech Used</div>
+                    <div className="project--link--a">
+                        {toolsDetails}
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    )
+}
+
+
+const ProjectData = [
+    {
+        id: "01",
+        title: "Tech-Fest 2022 Website",
+        details: "Techfest - 2K22 is the technical tvent of PCET's Pimpri Chinchwad College of Engineering, Pune. Website for Tech-Fest 2k22 was created and maintained by me. Almost 2000+ event registrations were done on the site.",
+        link: "techfest2k22.web.app/",
+        tools: ["HTML5", "CSS", "JavaScript", "Firebase"]
+    },
+    {
+        id: "02",
+        title: "Iconic Hashing Algorithm",
+        details: "IH is a unique hashing algorithm which works on base 10 digits for hashing. This hashing algorithm works on each of these digits to convert them into an unpredictable number format. This tool hashes any given string into its iconic hash.",
+        link: "github.com/InTruder-Sec/IHA",
+        tools: ["Python3"]
+    },
+    {
+        id: "03",
+        title: "Cesar Encrypter & Decrypter",
+        details: "In cryptography, a Caesar cipher is categorized as a substitution cipher in which the alphabet in the plain text is shifted by a fixed number down the alphabet. I have created a python tool which encrypts and decrypts strings with all posible set of keys.",
+        link: "github.com/InTruder-Sec/caesar-cipher",
+        tools: ["Python3"]
+    },
+    {
+        id: "04",
+        title: "FullStack Web Development Projects",
+        details: "I am currently working on full stack web development projects. Almost all of the websites created under this project are built with MERN Stack. Project contails multiple games, E-commerce website, normal website and much more.",
+        link: "github.com/InTruder-Sec/Full-StackDev-Projects",
+        tools: ["HTML5", "CSS", "JavaScript", "React", "Canva"]
+    },
+]
+
+
+function Socials() {
+    return (
+        <div className="socials">
+            <CreateHead head="Socials" title="Socials" />
+            <div className="socials--head">
+                <ul>
+                    <li>Reach Me Out</li>
+                </ul>
+            </div>
+            <div className="socials--list"  >
+                <div className="socials--card" onMouseEnter={e => {SwitchCase("socials--dis")}}>
+                    <div className="socials--design"><div className="socials--design--div" style={{backgroundColor: "blue"}}></div></div>
+                    <div className="socials--dis" id="socials--dis">EMAIL</div>
+                </div>
+            </div>
         </div>
     )
 }
