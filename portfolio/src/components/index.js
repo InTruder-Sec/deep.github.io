@@ -4,7 +4,13 @@ import heroImg from "../images/v8_35.jpg";
 import expcardimg1 from "./../images/vtf-image.png";
 import expcardimg2 from './../images/owasp-img.png';
 import expcardimg3 from './../images/h1.jpg';
-import GearImg from "./../images/gears.png"
+import GearImg from "./../images/gears.png";
+import Mail from './../images/mail.png';
+import Linkedin from './../images/linkedin.png';
+import Youtube from './../images/youtube.png';
+import Github from './../images/github.png';
+import Instagram from './../images/instagram.png'
+
 
 let isEnabled = "";
 
@@ -18,6 +24,7 @@ export default function Index() {
         <Skills />
         <Projects />
         <Socials />
+        <Footer />
       </div>
     )
 }
@@ -28,11 +35,11 @@ function NavBar() {
         <div className="Nav">
             
             <div className="Nav-place">
-                <a href="#"><div className="Nav-content Nav--about" id="Nav--about" onMouseEnter={e=> {SwitchCase("Nav--about")}} > ABOUT </div></a>
-                <a href="#"><div className="Nav-content Nav--exp" id="Nav--exp" onMouseEnter={e=> {SwitchCase("Nav--exp")}}>EXPERIENCE</div></a>
-                <a href="#"><div className="Nav-content Nav--skills" id="Nav--skills" onMouseEnter={e=> {SwitchCase("Nav--skills")}}>SKILLS</div></a>
-                <a href="#"><div className="Nav-content Nav--projects" id="Nav--projects" onMouseEnter={e=> {SwitchCase("Nav--projects")}}>PROJECTS</div></a>
-                <a href="#"><div className="Nav-content Nav--socials" id="Nav--socials" onMouseEnter={e=> {SwitchCase("Nav--socials")}}>SOCIALS</div></a>
+                <a href="#" rel="noreferrer"><div className="Nav-content Nav--about" id="Nav--about" onMouseEnter={e=> {SwitchCase("Nav--about")}} > ABOUT </div></a>
+                <a href="#experience" rel="noreferrer"><div className="Nav-content Nav--exp" id="Nav--exp" onMouseEnter={e=> {SwitchCase("Nav--exp")}}>EXPERIENCE</div></a>
+                <a href="#skills" rel="noreferrer"><div className="Nav-content Nav--skills" id="Nav--skills" onMouseEnter={e=> {SwitchCase("Nav--skills")}}>SKILLS</div></a>
+                <a href="#projects" rel="noreferrer"><div className="Nav-content Nav--projects" id="Nav--projects" onMouseEnter={e=> {SwitchCase("Nav--projects")}}>PROJECTS</div></a>
+                <a href="#Socials" rel="noreferrer"><div className="Nav-content Nav--socials" id="Nav--socials" onMouseEnter={e=> {SwitchCase("Nav--socials")}}>SOCIALS</div></a>
             </div>
         </div>
         
@@ -84,7 +91,7 @@ function Hero() {
                     <div className="intro-content">
                         <h3>ETHICAL HACKER | FULL STACK DEVELOPER | CODER</h3>
                     </div>
-                    <a href="#contact-us">
+                    <a href="#Socials">
                         <div className="intro-content2"><u>HIRE</u> <u>NOW</u></div>
                     </a>
                     <div className="intro-content3">
@@ -92,7 +99,7 @@ function Hero() {
                     </div>
                     <div className="intro-content4">Hackers exploit everything. Is your website safe from Hackers? Contact Us and
                         test your products now.</div>
-                    <a href="/#socials"><button className="contact-us">Contact-Us</button></a>
+                    <a href="#Socials"><button className="contact-us">Contact-Us</button></a>
                 </div>
             </div>
             
@@ -132,7 +139,7 @@ function Experience() {
 
     return (
         <div className="experience">
-            <CreateHead head="EXPERIENCE" title="MY EXPERIENCE"  />
+            <CreateHead head="experience" title="MY EXPERIENCE"  />
             <div className="exp-container">
                 {newCard}
             </div>
@@ -145,7 +152,7 @@ function CreateHead(props) {
     return (
         <div className="HeadLine">
             <div className="headline--title"  > {props.title} </div>
-            <div className="headline--head" id={props.title} onMouseEnter={e => {SwitchCase(props.title)}} > {props.head} </div>
+            <div className="headline--head" id={props.head} onMouseEnter={e => {SwitchCase(props.title)}} > {props.head} </div>
         </div>
     )
 }
@@ -426,7 +433,7 @@ function ProjectCard(props) {
                 <div className="project--link">
                     <div className="project--link--head">Project Link</div>
                     <div className="project--link--a"> 
-                    <a href={"https://" + props.link} target="_blank" >{props.link} </a></div>
+                    <a href={"https://" + props.link} rel="noreferrer" target="_blank" >{props.link} </a></div>
                 </div>
                 <div className="project--link project--tech">
                     <div className="project--link--head">Tech Used</div>
@@ -474,6 +481,19 @@ const ProjectData = [
 
 
 function Socials() {
+
+    const GetSocailCard = SocialsData.map(e => {
+        return(
+            <SocialCard
+                title={e.title}
+                color={e.color}
+                link={e.link}
+                img={e.img}
+                width={e.width}
+            />
+        )
+    })
+
     return (
         <div className="socials">
             <CreateHead head="Socials" title="Socials" />
@@ -483,11 +503,72 @@ function Socials() {
                 </ul>
             </div>
             <div className="socials--list"  >
-                <div className="socials--card" onMouseEnter={e => {SwitchCase("socials--dis")}}>
-                    <div className="socials--design"><div className="socials--design--div" style={{backgroundColor: "blue"}}></div></div>
-                    <div className="socials--dis" id="socials--dis">EMAIL</div>
-                </div>
+                {GetSocailCard}
             </div>
+        </div>
+    )
+}
+
+function SocialCard(props) {
+    return (
+        <div className="socias--card--main">
+            <a href={props.link} target="_blank" rel="noreferrer" >
+                <div className="socials--card" onMouseEnter={e => {SwitchCase(props.title)}}>
+                    <div className="socials--design"><div className="socials--design--div" style={{backgroundColor: props.color}}></div></div>
+                    <div className="socials--dis" ><img className="socials-img" src={props.img} width={props.width} alt="mail"></img><div id={props.title} className="socials--dis--main"> {props.title}</div></div>
+                </div>
+            </a>
+        </div>
+    )
+}
+
+
+const SocialsData = [
+    {
+        title: "EMAIL",
+        color: "blue",
+        link: "mailto:dhakatedeep909@gmail.com",
+        img: Mail,
+        width: "30px"
+    },
+    {
+        title: "LINKEDIN",
+        color: "#0072B1",
+        link: "https://www.linkedin.com/in/deep-dhakate-6ba5b7214/",
+        img: Linkedin,
+        width: "25px"
+
+    },
+    {
+        title: "GITHUB",
+        color: "#9d9d9d44",
+        link: "https://github.com/InTruder-Sec",
+        img: Github,
+        width: "30px"
+
+    },
+    {
+        title: "YOUTUBE",
+        color: "red",
+        link: "https://www.youtube.com/@InTruderSecurity",
+        img: Youtube,
+        width: "30px"
+
+    },
+    {
+        title: "INSTAGRAM",
+        color: "#dd2a7b",
+        link: "https://instagram.com/deep__dhakate",
+        img: Instagram,
+        width: "30px"
+
+    }
+]
+
+function Footer() {
+    return (
+        <div className="footer">
+            ©2022 Made with ❤️ by InT(Security). All Rights Reserved.
         </div>
     )
 }

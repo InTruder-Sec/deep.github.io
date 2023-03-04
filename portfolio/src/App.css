@@ -465,13 +465,20 @@ body {
   position: absolute;
   width: 300px;
   height: 80px;
+  z-index: 1;
 }
 
 .socials--design--div {
   width: 4px;
   height: 80px;
+  z-index: -1;
   transition: 0.8s;
   background-color: red;
+}
+
+.socials--list {
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .socials--design:hover .socials--design--div {
@@ -481,18 +488,45 @@ body {
   border-top-right-radius: 8px;
 }
 
+.socias--card--main {
+  display: inline-block;
+  margin-left: 8%;
+}
+
 .socials--card {
   width: 300px;
   height: 80px;
   margin-top: 50px;
-  margin-left: 10px;
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
   background-color: rgb(52, 45, 45);
 }
 
 .socials--dis {
-  padding-top: 25px;
+  padding-top: 28px;
   font-size: 20px;
-  padding-left: 70px;
+  padding-left: 60px;
+}
+
+.socials--dis--main {
+  margin-left: 50px;
+  margin-top: 4px;
+  z-index: 10;
+  opacity: 1;
+}
+
+.socials-img {
+  position: absolute;
+}
+
+.socials {
+  padding-bottom: 100px;
+}
+
+.footer {
+  height: 30px;
+  text-align: center;
+  color: black;
+  padding-top: 10px;
+  background-color: white;
 }
