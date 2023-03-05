@@ -12,9 +12,9 @@ import Github from './../images/github.png';
 import Instagram from './../images/instagram.png'
 
 
-let isEnabled = "";
+let isEnabled = [];
 
-export default function Index() {
+function Index() {
     return (
       <div className='index'>
         <NavBar />
@@ -48,10 +48,10 @@ function NavBar() {
 
 
 function SwitchCase(x) {
-    if (isEnabled !== x) {
-        isEnabled = x;
+    if (isEnabled.indexOf(x) === -1) {
+        isEnabled.push(x);
         const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
-        let t =document.getElementById(x)
+        let t = document.getElementById(x)
         let word = t.innerText
         let loop = (word.length-1)*4
         let subCount = 1
@@ -74,7 +74,8 @@ function SwitchCase(x) {
             newWord = ""
             if (loop-subCount === 0) {
                 t.innerText = word;
-                isEnabled = "";
+                let m = isEnabled.indexOf(x)
+                isEnabled.splice(m, 1)
                 clearInterval(Timer);
             }
         }, 50);
@@ -152,7 +153,7 @@ function CreateHead(props) {
     return (
         <div className="HeadLine">
             <div className="headline--title"  > {props.title} </div>
-            <div className="headline--head" id={props.head} onMouseEnter={e => {SwitchCase(props.title)}} > {props.head} </div>
+            <div className="headline--head" id={props.head} onMouseEnter={e => {SwitchCase(props.head)}} > {props.head} </div>
         </div>
     )
 }
@@ -315,7 +316,7 @@ const SkillData = [
         sl: [
             {
                 color: "red",
-                level: "OWASP TOP 10 WEB VULNERABILITIES",
+                level: "OWASP TOP 10",
             }
         ]
     },
@@ -451,10 +452,10 @@ function ProjectCard(props) {
 const ProjectData = [
     {
         id: "01",
-        title: "Tech-Fest 2022 Website",
-        details: "Techfest - 2K22 is the technical tvent of PCET's Pimpri Chinchwad College of Engineering, Pune. Website for Tech-Fest 2k22 was created and maintained by me. Almost 2000+ event registrations were done on the site.",
-        link: "techfest2k22.web.app/",
-        tools: ["HTML5", "CSS", "JavaScript", "Firebase"]
+        title: "FullStack Web Development Projects",
+        details: "I am currently working on full stack web development projects. Almost all of the websites created under this project are built with MERN Stack. Project contails multiple games, E-commerce website, normal website and much more.",
+        link: "github.com/InTruder-Sec/Full-StackDev-Projects",
+        tools: ["HTML5", "CSS", "JavaScript", "React", "Canva"]
     },
     {
         id: "02",
@@ -472,11 +473,12 @@ const ProjectData = [
     },
     {
         id: "04",
-        title: "FullStack Web Development Projects",
-        details: "I am currently working on full stack web development projects. Almost all of the websites created under this project are built with MERN Stack. Project contails multiple games, E-commerce website, normal website and much more.",
-        link: "github.com/InTruder-Sec/Full-StackDev-Projects",
-        tools: ["HTML5", "CSS", "JavaScript", "React", "Canva"]
-    },
+        title: "Tech-Fest 2022 Website",
+        details: "Techfest - 2K22 is the technical tvent of PCET's Pimpri Chinchwad College of Engineering, Pune. Website for Tech-Fest 2k22 was created and maintained by me. Almost 2000+ event registrations were done on the site.",
+        link: "techfest2k22.web.app/",
+        tools: ["HTML5", "CSS", "JavaScript", "Firebase"]
+    }
+    
 ]
 
 
@@ -568,7 +570,12 @@ const SocialsData = [
 function Footer() {
     return (
         <div className="footer">
-            ©2022 Made with ❤️ by InT(Security). All Rights Reserved.
+            ©2022 Made with ❤️ by Deep Dhakate. All Rights Reserved.
         </div>
     )
 }
+
+
+export default Index;
+
+export {Footer, NavBar, CreateHead};
