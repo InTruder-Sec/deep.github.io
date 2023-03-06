@@ -526,10 +526,10 @@ body {
 }
 
 .footer {
-  height: 30px;
   text-align: center;
   color: black;
   padding-top: 10px;
+  padding-bottom: 10px;
   background-color: white;
 }
 
@@ -584,5 +584,25 @@ body {
   }
   .exp-container {
     margin-left: 15%;
+  }
+  .headline--head {
+    font-size: 65px;
+  }
+  .headline--title {
+    font-size: 30px;
+    margin-top: 45px;
+  }
+  .hero--img {
+    margin-top: 25px;
+  }
+  .project--card {
+    height: 730px;
+  }
+  .socials {
+    height: 30px; 
+    margin-top: -120px;
+  }
+  .intro-content3 {
+    font-size: 20px;
   }
 }
