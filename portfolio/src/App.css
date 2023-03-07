@@ -410,7 +410,6 @@ body {
 
 .project--details {
   position: absolute;
-  height: 300px;
 }
 
 .project--details--head {
@@ -432,7 +431,6 @@ body {
 
 .project--link {
   position: absolute;
-  height: 300px;
   padding-top: 60px;
   margin-left: 580px;
 }
@@ -454,7 +452,7 @@ body {
 }
 
 .project--card--details {
-  height: 280px;
+  position: relative;
 }
 
 .socials--head {
@@ -597,10 +595,6 @@ body {
   }
   .project--card {
     height: 730px;
-  }
-  .socials {
-    height: 30px; 
-    margin-top: -120px;
   }
   .intro-content3 {
     font-size: 20px;
