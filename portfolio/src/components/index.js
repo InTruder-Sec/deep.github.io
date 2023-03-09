@@ -32,14 +32,22 @@ function Index() {
 
 function NavBar() {
     return (
-        <div className="Nav">
-            
-            <div className="Nav-place">
-                <a href="#" rel="noreferrer"><div className="Nav-content Nav--about" id="Nav--about" onMouseEnter={e=> {SwitchCase("Nav--about")}} > ABOUT </div></a>
-                <a href="#experience" rel="noreferrer"><div className="Nav-content Nav--exp" id="Nav--exp" onMouseEnter={e=> {SwitchCase("Nav--exp")}}>EXPERIENCE</div></a>
-                <a href="#skills" rel="noreferrer"><div className="Nav-content Nav--skills" id="Nav--skills" onMouseEnter={e=> {SwitchCase("Nav--skills")}}>SKILLS</div></a>
-                <a href="#projects" rel="noreferrer"><div className="Nav-content Nav--projects" id="Nav--projects" onMouseEnter={e=> {SwitchCase("Nav--projects")}}>PROJECTS</div></a>
-                <a href="#Socials" rel="noreferrer"><div className="Nav-content Nav--socials" id="Nav--socials" onMouseEnter={e=> {SwitchCase("Nav--socials")}}>SOCIALS</div></a>
+        <div className="NavBar">
+            <div className="Nav">
+                
+                <div className="Nav-place">
+                    <a href="#" rel="noreferrer"><div className="Nav-content Nav--about" id="Nav--about" onMouseEnter={e=> {SwitchCase("Nav--about")}} > ABOUT </div></a>
+                    <a href="#experience" rel="noreferrer"><div className="Nav-content Nav--exp" id="Nav--exp" onMouseEnter={e=> {SwitchCase("Nav--exp")}}>EXPERIENCE</div></a>
+                    <a href="#skills" rel="noreferrer"><div className="Nav-content Nav--skills" id="Nav--skills" onMouseEnter={e=> {SwitchCase("Nav--skills")}}>SKILLS</div></a>
+                    <a href="#projects" rel="noreferrer"><div className="Nav-content Nav--projects" id="Nav--projects" onMouseEnter={e=> {SwitchCase("Nav--projects")}}>PROJECTS</div></a>
+                    <a href="#Socials" rel="noreferrer"><div className="Nav-content Nav--socials" id="Nav--socials" onMouseEnter={e=> {SwitchCase("Nav--socials")}}>SOCIALS</div></a>
+                </div>
+            </div>
+        {/* Pixel Breakdown hamburger display block  */}
+            <div className="hamburger">
+                <div className="hamburger--dis dis1  active"></div>
+                <div className="hamburger--dis dis2 active"></div>
+                <div className="hamburger--dis dis3 active"></div>
             </div>
         </div>
         

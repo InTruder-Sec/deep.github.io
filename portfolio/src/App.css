@@ -30,6 +30,29 @@ body {
   font-family: "Source Code Pro", monospace;
 }
 
+.hamburger {
+  display: none;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  border-bottom-left-radius: 100px;
+}
+
+.hamburger--dis {
+  position: relative;
+  width: 40px;
+  height: 3px;
+  background-color: black;
+  margin-left: 39px;
+  margin-top: 8px;
+}
+
+
+
+
 .Nav {
   position: fixed;
   z-index: 3;
@@ -581,6 +604,9 @@ body {
   
   .Nav {
     display: none;
+  }
+  .hamburger {
+    display: block;
   }
   .exp-container {
     margin-left: 15%;
