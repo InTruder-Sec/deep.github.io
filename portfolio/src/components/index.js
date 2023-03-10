@@ -44,14 +44,31 @@ function NavBar() {
                 </div>
             </div>
         {/* Pixel Breakdown hamburger display block  */}
-            <div className="hamburger">
-                <div className="hamburger--dis dis1  active"></div>
-                <div className="hamburger--dis dis2 active"></div>
-                <div className="hamburger--dis dis3 active"></div>
+            <div className="hamburger" id="hamburger" >
+                <div className="haburger--btn" onClick={OpenNav}>
+                    <div className="hamburger--dis dis1"></div>
+                    <div className="hamburger--dis dis2"></div>
+                    <div className="hamburger--dis dis3"></div>
+                </div>
+                
             </div>
         </div>
         
     )
+}
+
+function OpenNav() {
+    let isActive = false;
+    if (!isActive) {
+        isActive = true;
+        document.getElementById("hamburger").classList.add("cover");
+        document.querySelector(".dis1").classList.add("active1");
+        document.querySelector(".dis2").classList.add("active2");
+        document.querySelector(".dis3").classList.add("active3");
+    }
+    if (isActive) {
+        console.log("None")
+    }
 }
 
 
