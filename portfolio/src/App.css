@@ -38,8 +38,9 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  border-bottom-left-radius: 100px;
+  border-bottom-left-radius: 100%;
   transition: 0.8s;
+  z-index: 9;
 }
 
 .hamburger--dis {
@@ -62,9 +63,8 @@ body {
 }
 
 .cover {
-  width: 100vw;
+  width: 110vw;
   height: 100vh;
-  border-bottom-left-radius: 0px;
 }
 
 .active1 {
@@ -81,6 +81,17 @@ body {
   margin-top: -13px;
 }
 
+.cover-content {
+  position: relative;
+  margin-left: 30px;
+  font-size: 20px;
+  font-weight: 650;
+  z-index: 10;
+  color: black;
+  margin-top: 20px;
+  transition: 0.8s;
+
+}
 
 .Nav {
   position: fixed;
@@ -98,8 +109,20 @@ body {
   right: 80px;
 }
 
+.cover-place {
+  margin-top: 145px;
+  position: absolute;
+  right: 35%;
+}
+
+.cover-active {
+  z-index: -1;
+  opacity: 0;
+}
+
 .Nav-content {
   display: inline-block;
+  position: relative;
   margin-left: 30px;
   font-size: 20px;
   font-weight: 500;

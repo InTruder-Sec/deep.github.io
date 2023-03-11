@@ -13,6 +13,8 @@ import Instagram from './../images/instagram.png'
 
 
 let isEnabled = [];
+let isActive = false;
+
 
 function Index() {
     return (
@@ -50,7 +52,13 @@ function NavBar() {
                     <div className="hamburger--dis dis2"></div>
                     <div className="hamburger--dis dis3"></div>
                 </div>
-                
+                <div className="cover-place">
+                    <a href="#" rel="noreferrer"><div className="cover-content cover-active" id="cover--about" onClick={OpenNav} onMouseEnter={e=> {SwitchCase("cover--about")}} > ABOUT </div></a>
+                    <a href="#experience" rel="noreferrer"><div className="cover-content cover-active" id="cover--exp" onClick={OpenNav} onMouseEnter={e=> {SwitchCase("cover--exp")}}>EXPERIENCE</div></a>
+                    <a href="#skills" rel="noreferrer"><div className="cover-content cover-active" id="cover--skills" onClick={OpenNav} onMouseEnter={e=> {SwitchCase("cover--skills")}}>SKILLS</div></a>
+                    <a href="#projects" rel="noreferrer"><div className="cover-content cover-active" id="cover--projects" onClick={OpenNav} onMouseEnter={e=> {SwitchCase("cover--projects")}}>PROJECTS</div></a>
+                    <a href="#Socials" rel="noreferrer"><div className="cover-content cover-active" id="cover--socials" onClick={OpenNav} onMouseEnter={e=> {SwitchCase("cover--socials")}}>SOCIALS</div></a>
+                </div>
             </div>
         </div>
         
@@ -58,17 +66,26 @@ function NavBar() {
 }
 
 function OpenNav() {
-    let isActive = false;
-    if (!isActive) {
+    if (isActive) {
+        isActive = false;
+        document.getElementById("hamburger").classList.remove("cover")
+        document.querySelector(".dis2").classList.remove("active2");
+        document.querySelector(".dis3").classList.remove("active3");
+        document.querySelector(".dis1").classList.remove("active1");
+        document.querySelectorAll(".cover-content").forEach(e => {
+            e.classList.add("cover-active");
+        });
+    } else {
         isActive = true;
         document.getElementById("hamburger").classList.add("cover");
         document.querySelector(".dis1").classList.add("active1");
         document.querySelector(".dis2").classList.add("active2");
         document.querySelector(".dis3").classList.add("active3");
+        document.querySelectorAll(".cover-content").forEach(e => {
+            e.classList.remove("cover-active");
+        });
     }
-    if (isActive) {
-        console.log("None")
-    }
+
 }
 
 
