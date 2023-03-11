@@ -113,11 +113,13 @@ body {
   margin-top: 145px;
   position: absolute;
   right: 35%;
+  transition: 0.8s;
 }
 
 .cover-active {
-  z-index: -1;
+  z-index: -100;
   opacity: 0;
+  right: -200%;
 }
 
 .Nav-content {
@@ -682,6 +684,9 @@ body {
 @media (max-width: 560px) {
   .HeadLine {
     padding-left: 2%;
+  }
+  .Hero {
+    padding-left: 5%;
   }
   .headline--title {
     margin-left: 20px;
