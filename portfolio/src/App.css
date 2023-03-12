@@ -32,8 +32,8 @@ body {
 
 .hamburger {
   display: none;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   background-color: white;
   position: fixed;
   top: 0;
@@ -45,21 +45,21 @@ body {
 
 .hamburger--dis {
   position: relative;
-  width: 40px;
+  width: 35px;
   height: 3px;
   background-color: black;
-  margin-top: 8px;
+  margin-top: 7px;
   transition: 0.8s;
 }
 
 .haburger--btn {
   position: absolute;
-  right: 23px;
+  right: 14px;
   z-index: 6;
 }
 
 .dis1 {
-  margin-top: 24px;
+  margin-top: 18px;
 }
 
 .cover {
@@ -85,13 +85,15 @@ body {
   position: relative;
   margin-left: 30px;
   font-size: 20px;
+  width: fit-content;
   font-weight: 650;
   z-index: 10;
   color: black;
   margin-top: 20px;
-  transition: 0.8s;
-
+  z-index: 20;
 }
+
+
 
 .Nav {
   position: fixed;
@@ -495,6 +497,7 @@ body {
   font-size: 18px;
   margin-left: 110px;
   color: aqua;
+  opacity: 0.6;
   transition: 0.8s;
   margin-top: 60px;
 }
@@ -517,6 +520,7 @@ body {
   font-size: 18px;
   transition: 0.8s;
   color: aqua;
+  opacity: 0.6;
   padding-bottom: 30px;
 }
 
@@ -746,7 +750,7 @@ body {
     margin-left: 80px;
   }
   .project--card--details {
-    margin-left: -130px;
+    margin-left: -110px;
   }
   .project--details--contains {
     width: 320px;

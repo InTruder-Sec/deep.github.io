@@ -53,11 +53,11 @@ function NavBar() {
                     <div className="hamburger--dis dis3"></div>
                 </div>
                 <div className="cover-place cover-active">
-                    <a href="#" rel="noreferrer"><div className="cover-content" id="cover--about" onClick={OpenNav} onMouseEnter={e=> {SwitchCase("cover--about")}} > ABOUT </div></a>
-                    <a href="#experience" rel="noreferrer"><div className="cover-content " id="cover--exp" onClick={OpenNav} onMouseEnter={e=> {SwitchCase("cover--exp")}}>EXPERIENCE</div></a>
-                    <a href="#skills" rel="noreferrer"><div className="cover-content " id="cover--skills" onClick={OpenNav} onMouseEnter={e=> {SwitchCase("cover--skills")}}>SKILLS</div></a>
-                    <a href="#projects" rel="noreferrer"><div className="cover-content " id="cover--projects" onClick={OpenNav} onMouseEnter={e=> {SwitchCase("cover--projects")}}>PROJECTS</div></a>
-                    <a href="#Socials" rel="noreferrer"><div className="cover-content " id="cover--socials" onClick={OpenNav} onMouseEnter={e=> {SwitchCase("cover--socials")}}>SOCIALS</div></a>
+                    <a href="#" rel="noreferrer"><div className="cover-content cover-design" id="cover--about" onClick={OpenNav} onMouseEnter={e=> {SwitchCase("cover--about")}} > ABOUT </div></a>
+                    <a href="#experience" rel="noreferrer"><div className="cover-content cover-design" id="cover--exp" onClick={OpenNav} onMouseEnter={e=> {SwitchCase("cover--exp")}}>EXPERIENCE</div></a>
+                    <a href="#skills" rel="noreferrer"><div className="cover-content cover-design" id="cover--skills" onClick={OpenNav} onMouseEnter={e=> {SwitchCase("cover--skills")}}>SKILLS</div></a>
+                    <a href="#projects" rel="noreferrer"><div className="cover-content cover-design" id="cover--projects" onClick={OpenNav} onMouseEnter={e=> {SwitchCase("cover--projects")}}>PROJECTS</div></a>
+                    <a href="#Socials" rel="noreferrer"><div className="cover-content cover-design" id="cover--socials" onClick={OpenNav} onMouseEnter={e=> {SwitchCase("cover--socials")}}>SOCIALS</div></a>
                 </div>
             </div>
         </div>
