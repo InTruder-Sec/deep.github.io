@@ -93,7 +93,72 @@ body {
   z-index: 20;
 }
 
+.expdetails--img {
+  position: fixed;
+  width: 30%;
+  height: 0%;
+  background-color: #dd3737;
+  top: 0;
+  z-index: 15;
+  transition: 0.8s;
+  overflow: hidden;
+}
 
+.expdetails--details {
+  width: 70%;
+  height: 0%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(61, 61, 61);
+  z-index: 15;
+  transition: 0.8s;
+  overflow: hidden;
+}
+
+.exp--img--details {
+  width: 100%;
+  margin-left: 8%;
+  font-size: 25px;
+  padding-right: 8%;
+}
+
+.exp--details--img {
+  margin-top: 30px;
+  margin-left: 7%;
+}
+
+.exp-exit {
+  background-color: white;
+  margin-right: 40px;
+}
+
+.dis4 {
+  rotate: 45deg;
+  margin-top: 50px;
+}
+
+.dis5 {
+  rotate: 135deg;
+  margin-top: -2px;
+}
+
+.exp--details--main {
+  width: 80%;
+  margin-left: 5%;
+  margin-top: 100px;
+  font-size: 20px;
+}
+
+.exp--main--role {
+  font-size: 28px;
+  padding-bottom: 10px;
+}
+
+.exp--main--date {
+  margin-bottom: 35px;
+  font-size: 16px;
+}
 
 .Nav {
   position: fixed;
@@ -131,6 +196,8 @@ body {
   font-size: 20px;
   font-weight: 500;
 }
+
+
 
 
 .Nav--about::after {

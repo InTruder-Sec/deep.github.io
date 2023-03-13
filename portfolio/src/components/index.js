@@ -23,6 +23,7 @@ function Index() {
         <Hero />
         <AboutMe/>
         <Experience />
+        <ExpDetails />
         <Skills />
         <Projects />
         <Socials />
@@ -166,6 +167,7 @@ function Experience() {
     const newCard = ExpData.map(item => {
         return(
             <ExpCard
+                id= {item.id}
                 classN={item.classDis}
                 head={item.title}
                 role={item.role}
@@ -199,7 +201,7 @@ function CreateHead(props) {
 
 function ExpCard(props) {
     return (
-        <div className={props.classN} >
+        <div className={props.classN}  onClick={e => {OpenDetails(props.id)}} >
             <div className="expcard--img"><img className="expcard--img" alt="vtfImage" src={props.img}></img></div>
             <div className="expcard--dis">
                 <div className="expcard--dis--design" style={{backgroundColor: props.color}}></div>
@@ -211,31 +213,87 @@ function ExpCard(props) {
     )
 }
 
+function ExpDetails() {
+    const OpenDetailsDiv = ExpData.map(e => {
+        let newIdImg = "expdetails--img expdetails--img" + e.id;
+        let newIdDetails = "expdetails--details expdetails--details" + e.id;
+        return(
+            <div className="expdetails">
+                <div className={newIdImg} style={{backgroundColor: e.color}} >
+                    <div className="exp--details--img">
+                        <img className="exp--details--img" alt={e.title} src={e.img}></img>
+                        <div className="exp--img--details">{e.title}</div>
+                    </div>
+                </div>
+                <div className={newIdDetails}>
+                    <div className="haburger--btn" onClick={r => {ExitExpDetails(e.id)}}>
+                        <div className="hamburger--dis dis4 exp-exit"></div>
+                        <div className="hamburger--dis dis5 exp-exit"></div>
+                    </div>
+                    <div className="exp--details--main" >
+                    <div className="exp--main--role"><b>{e.role}</b></div>
+                    <div className="exp--main--date">{e.date}</div>
+                    <div className="exp--main--dis" dangerouslySetInnerHTML={{ __html: e.details }}></div>
+                    </div>
+                </div>
+            </div>
+        )
+    })
+    return (
+        <div className="ExpDetails>">
+            {OpenDetailsDiv}
+        </div>
+    )
+}
+
+function OpenDetails(e) {
+    let newIdImg = ".expdetails--img" + e;
+    let newIdDetails = ".expdetails--details" + e;
+    document.querySelector(newIdImg).style.height = "100%";
+    document.querySelector(newIdDetails).style.height = "100%";
+}
+
+function ExitExpDetails(e) {
+    let newIdImg = ".expdetails--img" + e;
+    let newIdDetails = ".expdetails--details" + e;
+    document.querySelector(newIdImg).style.height = "0%";
+    document.querySelector(newIdDetails).style.height = "0%";
+}
+
 
 const ExpData = [
     {
+        id: 1,
         title: "Virtual Testing Foundation",
         role: "CyberSecurity Intern",
         loc: "remote",
+        date: "JAN 18 2021 - MAR 18 2021",
         img: expcardimg1,
         classDis: "expcard1",
-        color: "red"
+        color: "red",
+        details: "VTF is a California, USA based 501(c)3 nonprofit volunteer-run organization. Over the internship period I have completed,<br><br>● Kube Academy Courses<br><br>● Hands-on lab learning<br/><br/>● Digital and social media marketing<br/><br/>● Captured minutes of meeting and had team collaborations"
     },
     {
+        id: 2,
         title: "OWASP Chapter PCCOE",
         role: "Security Team Lead",
         loc: "PCCOE",
+        date: "JULY 25 2021 - CURRENT",
         img: expcardimg2,
         classDis: "expcard2",
-        color: "blue"
+        color: "blue",
+        details: "The Open Web Application Security Project® (OWASP) is a nonprofit foundation that works to improve the security of software. Being a part of Security & CTF Team, my responsibilities are,<br/><br/>● Organize Tech-talks<br/><br/>● Lead University CTF Team<br/><br/>● Organize Security Workshops & Bootcamps<br/><br/>● Create Awareness Regarding Security Domain"
     },
     {
+        id: 3,
         title: "Hacktivitycon Rank 45",
         role: "CTF Team Lead",
         loc: "REMOTE",
+        date: "SEPT 17 2021 - SEPT 19 2021",
         img: expcardimg3,
         classDis: "expcard1",
-        color: "purple"
+        color: "purple",
+        details: "H@ctivitycon is a HackerOne hosted hacker conference built by the community for the community. We scored 5527 points and stood 45th all over world. We PWNed the following categories,<br/><br/>● Forensics, OSINT<br/><br/>● Web Vulnerabilities<br/><br/>● Cryptography, Reverse Engineering<br/><br/>● Mobile App Vulnerabilities"
     }
 ]
 
