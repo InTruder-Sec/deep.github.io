@@ -293,7 +293,7 @@ const ExpData = [
         img: expcardimg3,
         classDis: "expcard1",
         color: "purple",
-        details: "H@ctivitycon is a HackerOne hosted hacker conference built by the community for the community. We scored 5527 points and stood 45th all over world. We PWNed the following categories,<br/><br/>● Forensics, OSINT<br/><br/>● Web Vulnerabilities<br/><br/>● Cryptography, Reverse Engineering<br/><br/>● Mobile App Vulnerabilities"
+        details: "H@ctivitycon is a HackerOne hosted hacker conference built by the community for the community. We scored 5527 points and stood 45th all over world. We PWNed the following categories,<br/><br/>● Forensics, OSINT<br/><br/>● Web Vulnerabilities<br/><br/>● Cryptography, Reverse Engineering<br/><br/>● Mobile App Vulnerabilities."
     }
 ]
 

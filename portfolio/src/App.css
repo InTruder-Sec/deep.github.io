@@ -4,7 +4,6 @@
 
 
 html {
-  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -27,6 +26,7 @@ body {
   color: whitesmoke;
   cursor: default;
   background-color: #151515;
+  overflow-x: visible;
   font-family: "Source Code Pro", monospace;
 }
 
@@ -37,7 +37,7 @@ body {
   background-color: white;
   position: fixed;
   top: 0;
-  right: 0;
+  right: 0px;
   border-bottom-left-radius: 100%;
   transition: 0.8s;
   z-index: 9;
@@ -125,7 +125,8 @@ body {
 
 .exp--details--img {
   margin-top: 30px;
-  margin-left: 7%;
+  margin-left: 5%;
+  width: 90%;
 }
 
 .exp-exit {
@@ -552,7 +553,7 @@ body {
   font-family: "Source Code Pro", monospace;
   font-size: 30px;
   margin-left: 110px;
-  padding-right: 10px;
+  padding-right: 0px;
 }
 
 .project--details {
@@ -759,6 +760,15 @@ body {
   .Hero {
     padding-left: 5%;
   }
+  .expdetails--details {
+    width: 100%;
+  }
+  .expdetails--img {
+    width: 0%;
+  }
+  .exp-exit {
+    margin-right: 20px;
+  }
   .headline--title {
     margin-left: 20px;
   }
@@ -820,7 +830,7 @@ body {
     margin-left: -110px;
   }
   .project--details--contains {
-    width: 320px;
+    width: 310px;
   }
   .socials--list {
     margin-left: 2%;
