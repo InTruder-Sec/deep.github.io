@@ -113,7 +113,7 @@ body {
   background-color: rgb(61, 61, 61);
   z-index: 15;
   transition: 0.8s;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .exp--img--details {
