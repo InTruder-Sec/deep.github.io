@@ -10,6 +10,7 @@ import Linkedin from "./../images/linkedin.png";
 import Youtube from "./../images/youtube.png";
 import Github from "./../images/github.png";
 import Instagram from "./../images/instagram.png";
+import { Navigate } from "react-router-dom";
 
 let isEnabled = [];
 let isActive = false;
@@ -31,22 +32,22 @@ function Index() {
 }
 
 function NavBar() {
+  const navigate = new Navigate();
   return (
     <div className="NavBar">
       <div className="Nav">
         <div className="Nav-place">
-          <a href="#" rel="noreferrer">
-            <div
-              className="Nav-content Nav--about"
-              id="Nav--about"
-              onMouseEnter={(e) => {
-                SwitchCase("Nav--about");
-              }}
-            >
-              {" "}
-              ABOUT{" "}
-            </div>
-          </a>
+          <div
+            onClick={navigate("#")}
+            className="Nav-content Nav--about"
+            id="Nav--about"
+            onMouseEnter={(e) => {
+              SwitchCase("Nav--about");
+            }}
+          >
+            {" "}
+            ABOUT{" "}
+          </div>
           <a href="#experience" rel="noreferrer">
             <div
               className="Nav-content Nav--exp"
@@ -101,7 +102,7 @@ function NavBar() {
           <div className="hamburger--dis dis3"></div>
         </div>
         <div className="cover-place cover-active">
-          <a href="#" rel="noreferrer">
+          <a href="/" rel="noreferrer">
             <div
               className="cover-content cover-design"
               id="cover--about"
