@@ -2,7 +2,6 @@
   margin: 0px;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -198,9 +197,6 @@ body {
   font-weight: 500;
 }
 
-
-
-
 .Nav--about::after {
   display: block;
   content: "";
@@ -281,7 +277,6 @@ body {
 .hero--details {
   display: inline-block;
 }
-
 
 .intro-content {
   padding-left: 20px;
@@ -392,6 +387,7 @@ body {
   height: 350px;
   width: 350px;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .expcard--dis {
@@ -682,8 +678,7 @@ body {
   background-color: white;
 }
 
-@media (max-width:1280px) {
-  
+@media (max-width: 1280px) {
   .project--details {
     position: relative;
     height: fit-content;
@@ -707,7 +702,7 @@ body {
   }
 }
 
-@media (max-width:1068px) {
+@media (max-width: 1068px) {
   .headline--head {
     font-size: 100px;
   }
@@ -726,8 +721,7 @@ body {
   }
 }
 
-@media (max-width:780px) {
-  
+@media (max-width: 780px) {
   .Nav {
     display: none;
   }
@@ -751,7 +745,6 @@ body {
     font-size: 20px;
   }
 }
-
 
 @media (max-width: 560px) {
   .HeadLine {
