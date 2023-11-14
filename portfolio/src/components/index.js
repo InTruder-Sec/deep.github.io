@@ -495,6 +495,7 @@ function Projects() {
         id={item.id}
         title={item.title}
         link={item.link}
+        linkText={item.linkText}
         details={item.details}
         tools={item.tools}
         key={item.key}
@@ -529,7 +530,7 @@ function ProjectCard(props) {
           <div className="project--link--head">Project Link</div>
           <div className="project--link--a">
             <a href={"https://" + props.link} rel="noreferrer" target="_blank">
-              {props.link}{" "}
+              {props.linkText}{" "}
             </a>
           </div>
         </div>
