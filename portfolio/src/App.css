@@ -126,6 +126,7 @@ body {
   margin-top: 30px;
   margin-left: 5%;
   width: 90%;
+  border-radius: 5px;
 }
 
 .exp-exit {
@@ -323,6 +324,7 @@ body {
   height: 50px;
   width: 140px;
   font-size: 15px;
+  box-shadow: rgba(182, 24, 24, 1) 0px 5px 15px;
   letter-spacing: 2px;
   border-radius: 4px;
   margin-left: 20px;
@@ -332,6 +334,8 @@ body {
 
 .contact-us:hover {
   background-color: #d5b019;
+  box-shadow: rgb(182, 161, 24) 0px 5px 15px;
+  transform: translateY(-5px);
 }
 
 .HeadLine {
@@ -362,6 +366,7 @@ body {
   width: 70%;
   padding-left: 10%;
   font-weight: 400;
+  line-height: 30px;
   color: whitesmoke;
 }
 
@@ -372,6 +377,11 @@ body {
 .exp-container {
   margin-left: 40%;
   margin-top: 100px;
+}
+
+.expcard {
+  width: fit-content;
+  height: fit-content;
 }
 
 .expcard1 {
@@ -397,7 +407,12 @@ body {
   background-color: rgb(52, 45, 45);
 }
 
+.expcard:hover .expcard--dis--design {
+  height: 100px;
+}
+
 .expcard--dis--design {
+  transition: 0.6s;
   display: block;
   height: 3px;
   position: absolute;
@@ -411,6 +426,8 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 600;
+  z-index: 1;
+  position: relative;
 }
 
 .expcard--dis--role {
@@ -422,8 +439,11 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   font-weight: 700;
+  z-index: 1;
+  position: relative;
   letter-spacing: 2px;
   text-transform: uppercase;
+
 }
 
 .expcard--dis--loc {
@@ -434,6 +454,8 @@ body {
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
+  z-index: 1;
+  position: relative;
 }
 
 .skill--card {
