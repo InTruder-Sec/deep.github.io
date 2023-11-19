@@ -172,6 +172,12 @@ body {
   background-color: #151515;
 }
 
+.blur-nav {
+  background-color: #151515;
+  opacity: 0.9;
+  backdrop-filter: blur(1000px);
+}
+
 .Nav-place {
   position: absolute;
   right: 80px;
@@ -194,7 +200,7 @@ body {
   display: inline-block;
   position: relative;
   margin-left: 30px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
 }
 
@@ -680,7 +686,6 @@ body {
 
 .socials--dis--main {
   margin-left: 50px;
-  margin-top: 4px;
   z-index: 10;
   opacity: 1;
 }

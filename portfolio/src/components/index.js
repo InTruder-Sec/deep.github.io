@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "../App.css";
 import heroImg from "../images/profile.png";
 import ExpData from "../Data/Experience";
@@ -30,7 +30,7 @@ function Index() {
 function NavBar() {
   return (
     <div className="NavBar">
-      <div className="Nav">
+      <div className="Nav blur-nav">
         <div className="Nav-place">
           <a href="/" rel="noreferrer">
             <div
