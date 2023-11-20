@@ -303,7 +303,7 @@ function AboutMe() {
         Feel free to contact me for collaboration and to bring exciting ideas to
         life.
         <br />
-        <a href="/#socials">
+        <a href="/#Socials">
           <button className="contact-us socials-button">Socials</button>
         </a>
       </div>
