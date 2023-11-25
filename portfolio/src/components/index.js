@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import heroImg from "../images/v8_35.jpg";
+import heroImg from "../images/profile.png";
 import expcardimg1 from "./../images/vtf-image.png";
 import expcardimg2 from "./../images/owasp-img.png";
 import expcardimg3 from "./../images/h1.jpg";
@@ -10,6 +10,7 @@ import Linkedin from "./../images/linkedin.png";
 import Youtube from "./../images/youtube.png";
 import Github from "./../images/github.png";
 import Instagram from "./../images/instagram.png";
+import SkillData from "../Data/skills";
 
 let isEnabled = [];
 let isActive = false;
@@ -282,16 +283,25 @@ function AboutMe() {
     <div className="About-Me">
       <CreateHead head="ABOUT" title="ABOUT ME" />
       <div className="about--details">
-        Hey there👋, my name is Deep. I am a Highly skilled Web Developer and Ethical Hacker with a strong expertise in ReactJS and UI development. Adept at creating innovatively designed websites, I bring a comprehensive understanding of HTML, CSS3, and JavaScript to deliver exceptional user experiences. With a passion for tackling diverse projects, I am currently dedicated to expanding my knowledge in back end development.
-
+        Hey there👋, my name is Deep. I am a Highly skilled Web Developer and
+        Ethical Hacker with a strong expertise in ReactJS and UI development.
+        Adept at creating innovatively designed websites, I bring a
+        comprehensive understanding of HTML, CSS3, and JavaScript to deliver
+        exceptional user experiences. With a passion for tackling diverse
+        projects, I am currently dedicated to expand my knowledge in back end
+        development.
         <br />
         <br />
-        Additionally, I possess a solid skill set in MongoDB, Express , SQL, C++ for Data Structures and Algorithms, as well as Networking. This versatility enables me to approach projects from multiple angles, ensuring comprehensive and efficient solutions.
- Looking for a job in the Red Team of a company. Being a greedy learner, I love to
-        explore how things work around me.
+        Additionally, I acquire a solid skill set in MongoDB, Express , SQL, C++
+        for Data Structures and Algorithms, as well as Networking. This
+        versatility enables me to approach projects from multiple angles,
+        ensuring comprehensive and efficient solutions. Looking for a job in the
+        Red Team of a company. Being a greedy learner, I love to explore how
+        things work around me.
         <br />
         <br />
-Feel free to contact me for collaboration and to bring exciting ideas to life.
+        Feel free to contact me for collaboration and to bring exciting ideas to
+        life.
         <br />
         <a href="/#socials">
           <button className="contact-us socials-button">Socials</button>
@@ -517,139 +527,6 @@ function SkillList(props) {
     </div>
   );
 }
-
-const SkillData = [
-  {
-    id: 0,
-    count: 2,
-    date: "Mar 2019",
-    sl: [
-      {
-        color: "red",
-        level: "HTML5 & CSS",
-      },
-      {
-        color: "blue",
-        level: "JAVASCRIPT",
-      },
-    ],
-  },
-  {
-    id: 1,
-    count: 2,
-    date: "JAN 2020",
-    sl: [
-      {
-        color: "blue",
-        level: "LINUX",
-      },
-      {
-        color: "blue",
-        level: "C++",
-      },
-    ],
-  },
-  {
-    id: 2,
-    count: 1,
-    date: "MAR 2020",
-    sl: [
-      {
-        color: "red",
-        level: "BURPSUITE",
-      },
-    ],
-  },
-  {
-    id: 3,
-    count: 1,
-    date: "OCT 2020",
-    sl: [
-      {
-        color: "red",
-        level: "OWASP TOP 10",
-      },
-    ],
-  },
-  {
-    id: 4,
-    count: 1,
-    date: "JAN 2021",
-    sl: [
-      {
-        color: "blue",
-        level: "ETHICAL HACKING",
-      },
-    ],
-  },
-  {
-    id: 5,
-    count: 3,
-    date: "APRIL 2021",
-    sl: [
-      {
-        color: "yellow",
-        level: "MY-SQL",
-      },
-      {
-        color: "greenyellow",
-        level: "NETWORK SECURITY",
-      },
-      {
-        color: "red",
-        level: "PYTHON",
-      },
-    ],
-  },
-  {
-    id: 6,
-    count: 1,
-    date: "MAR 2022",
-    sl: [
-      {
-        color: "blue",
-        level: "FIREBASE",
-      },
-    ],
-  },
-  {
-    id: 7,
-    count: 2,
-    date: "AUG 2022",
-    sl: [
-      {
-        color: "yellow",
-        level: "DJANGO FRAMEWORK",
-      },
-      {
-        color: "greenyellow",
-        level: "FIGMA",
-      },
-    ],
-  },
-  {
-    id: 8,
-    count: 1,
-    date: "DEC 2022",
-    sl: [
-      {
-        color: "red",
-        level: "ReactJS",
-      },
-    ],
-  },
-  {
-    id: 9,
-    count: 1,
-    date: "JAN 2023",
-    sl: [
-      {
-        color: "blue",
-        level: "Appwrite",
-      },
-    ],
-  },
-];
 
 function Projects() {
   const ProjectCardDetails = ProjectData.map((item) => {

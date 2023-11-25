@@ -324,18 +324,20 @@ body {
   height: 50px;
   width: 140px;
   font-size: 15px;
-  box-shadow: rgba(182, 24, 24, 1) 0px 5px 15px;
+  box-shadow: rgba(182, 24, 24, 1) 5px 5px 15px;
   letter-spacing: 2px;
   border-radius: 4px;
   margin-left: 20px;
+  cursor: pointer;
   transition: 0.6s;
   margin-top: 50px;
 }
 
 .contact-us:hover {
   background-color: #d5b019;
-  box-shadow: rgb(182, 161, 24) 0px 5px 15px;
+  box-shadow: rgb(182, 161, 24) 5px 5px 15px;
   transform: translateY(-5px);
+  color: black;
 }
 
 .HeadLine {
@@ -443,7 +445,6 @@ body {
   position: relative;
   letter-spacing: 2px;
   text-transform: uppercase;
-
 }
 
 .expcard--dis--loc {
