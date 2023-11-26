@@ -25,7 +25,7 @@ body {
   color: whitesmoke;
   cursor: default;
   background-color: #151515;
-  overflow-x: visible;
+  overflow-x: hidden;
   font-family: "Source Code Pro", monospace;
 }
 

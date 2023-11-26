@@ -251,7 +251,7 @@ function Hero() {
   return (
     <div className="Hero">
       <div className="hero--dis">
-        <img className="hero--img" src={heroImg} alt="hero"></img>
+        <img className="hero--img" src={heroImg} alt="ProfileImage"></img>
         <div className="hero--details">
           <div className="intro-content">
             <h3>ETHICAL HACKER | FULL STACK DEVELOPER | CODER</h3>
