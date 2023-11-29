@@ -1,10 +1,3 @@
-// skills = [
-
-// bug bounty,
-// Security tools,
-
-// ];
-
 const SkillData = [
   {
     id: 0,
