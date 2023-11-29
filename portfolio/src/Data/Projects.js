@@ -43,7 +43,7 @@ const ProjectData = [
     key: "4",
     title: "Web Dev Projects",
     details:
-      "This is a collection of all the web development projects that I have built. It includes projects built using HTML5, CSS3, JavaScript, ReactJS, NodeJS, ExpressJS, Socket.io, MongoDB, and Appwrite.",
+      "This is a collection of all the web development projects that I have built. It includes projects like To do list, Calculator, Weather App, Snake Game, etc.",
     link: "github.com/InTruder-Sec/Full-StackDev-Projects",
     linkText: "Web Dev Projects",
     tools: [
