@@ -3,7 +3,7 @@ import "../App.css";
 import heroImg from "../images/profile.png";
 import ExpData from "../Data/Experience";
 import GearImg from "./../images/gears.png";
-
+import resume from "../Data/Resume.pdf";
 import SkillData from "../Data/skills";
 import ProjectData from "../Data/Projects";
 import SocialsData from "../Data/Socials";
@@ -299,8 +299,13 @@ function AboutMe() {
         Feel free to contact me for collaboration and to bring exciting ideas to
         life.
         <br />
-        <a href="/#Socials">
-          <button className="contact-us socials-button">Socials</button>
+        <a href={resume} target="_blank" rel="noreferrer">
+          <button
+            className="contact-us socials-button"
+            style={{ width: "200px" }}
+          >
+            Download Resume
+          </button>
         </a>
       </div>
     </div>
