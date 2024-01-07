@@ -409,6 +409,7 @@ body {
 
 .expcard--dis {
   height: 100px;
+  cursor: pointer;
   margin-top: 5px;
   width: 350px;
   background-color: rgb(52, 45, 45);
@@ -416,6 +417,7 @@ body {
 
 .expcard:hover .expcard--dis--design {
   height: 100px;
+  opacity: 0.4;
 }
 
 .expcard--dis--design {
@@ -487,7 +489,7 @@ body {
 }
 
 .skill--card--dis {
-  font-size: 20px;
+  font-size: 18px;
   position: absolute;
   font-weight: 300;
   width: 280px;
@@ -699,10 +701,9 @@ body {
 
 .footer {
   text-align: center;
-  color: black;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: white;
+  background-color: #342d2d;
 }
 
 @media (max-width: 1280px) {

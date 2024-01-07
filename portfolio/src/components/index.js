@@ -284,8 +284,8 @@ function AboutMe() {
         Adept at creating innovatively designed websites, I bring a
         comprehensive understanding of HTML, CSS3, and JavaScript to deliver
         exceptional user experiences. With a passion for tackling diverse
-        projects, I am currently dedicated to expand my knowledge in back end
-        development.
+        projects, I am currently dedicated to expand my knowledge in cloud
+        computing.
         <br />
         <br />
         Additionally, I acquire a solid skill set in MongoDB, Express , SQL, C++
@@ -368,7 +368,7 @@ function ExpCard(props) {
       <div className="expcard--dis">
         <div
           className="expcard--dis--design"
-          style={{ backgroundColor: props.color }}
+          style={{ background: props.color }}
         ></div>
         <div className="expcard--dis--head">{props.head}</div>
         <div className="expcard--dis--role">{props.role}</div>
@@ -384,7 +384,7 @@ function ExpDetails() {
     let newIdDetails = "expdetails--details expdetails--details" + e.id;
     return (
       <div className="expdetails">
-        <div className={newIdImg} style={{ backgroundColor: e.color }}>
+        <div className={newIdImg} style={{ background: e.color }}>
           <div className="exp--details--img">
             <img className="exp--details--img" alt={e.title} src={e.img}></img>
             <div className="exp--img--details">{e.title}</div>

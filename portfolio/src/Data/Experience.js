@@ -1,43 +1,43 @@
-import expcardimg1 from "./../images/vtf-image.png";
-import expcardimg2 from "./../images/owasp-img.png";
+import expcardimg1 from "./../images/waveauth.png";
+import expcardimg2 from "./../images/techturning.webp";
 import expcardimg3 from "./../images/h1.jpg";
 
 const ExpData = [
   {
     id: 1,
-    title: "Virtual Testing Foundation",
-    role: "CyberSecurity Intern",
+    title: "WaveAuth",
+    role: "Full Stack Intern",
     loc: "remote",
-    date: "JAN 18 2021 - MAR 18 2021",
+    date: "FEB 2023 - MAY 2023",
     img: expcardimg1,
     classDis: "expcard1 expcard",
-    color: "red",
+    color: "linear-gradient(80deg, #2ecd3d, #1ed16c)",
     details:
-      "VTF is a California, USA based 501(c)3 nonprofit volunteer-run organization. Over the internship period I have completed,<br><br>● Kube Academy Courses<br><br>● Hands-on lab learning<br/><br/>● Digital and social media marketing<br/><br/>● Captured minutes of meeting and had team collaborations",
+      "● Designed and created: <a href='https://waveauth.tech' target='_blank'>WaveAuth.tech</a><br/><br/>● Implemented my Web Development skills to create a stunning attractive website for a startup.<br><br>● Built and coordinated with JAVA developers to create a fully functional passwordless service.<br><br>● Tech Stack:- ReactJS, JavaScript, NextJS, SwiperJS, Git, Github<br/><br/>",
   },
   {
     id: 2,
-    title: "OWASP Chapter PCCOE",
-    role: "Security Team Lead",
-    loc: "PCCOE",
-    date: "JULY 25 2021 - CURRENT",
+    title: "Turing Techlabs",
+    role: "Freelancing",
+    loc: "REMOTE",
+    date: "MAR 2022 - APR 2022",
     img: expcardimg2,
-    classDis: "expcard2 expcard",
-    color: "blue",
+    classDis: "expcard2 expcard ",
+    color: "#000",
     details:
-      "The Open Web Application Security Project® (OWASP) is a nonprofit foundation that works to improve the security of software. Being a part of Security & CTF Team, my responsibilities are,<br/><br/>● Organize Tech-talks<br/><br/>● Lead University CTF Team<br/><br/>● Organize Security Workshops & Bootcamps<br/><br/>● Create Awareness Regarding Security Domain",
+      "● Designed and created:<a href='https://healthcare-service.netlify.app/' target='_blank'> Healtcare</a><br/><br/>● Coordinated with Turing TechLabs to deliver an amazing website for a Hospital.<br/><br/>● ShreeArogyam Ayu: Created a fully customized React-based website, enhancing the online presence.<br/><br/>● Tech Stack:- ReactJS, JavaScript, Git, Github<br/><br/>",
   },
   {
     id: 3,
-    title: "Hacktivitycon Rank 45",
-    role: "CTF Team Lead",
+    title: "Bug Bounty Hunter",
+    role: "Freelancing",
     loc: "REMOTE",
-    date: "SEPT 17 2021 - SEPT 19 2021",
+    date: "SEPT 2021 - Current",
     img: expcardimg3,
     classDis: "expcard1 expcard",
     color: "purple",
     details:
-      "H@ctivitycon is a HackerOne hosted hacker conference built by the community for the community. We scored 5527 points and stood 45th all over world. We PWNed the following categories,<br/><br/>● Forensics, OSINT<br/><br/>● Web Vulnerabilities<br/><br/>● Cryptography, Reverse Engineering<br/><br/>● Mobile App Vulnerabilities.",
+      "● Part time bug bounty hunter<br/><br/>● Responsibly disclosed multiple medium and high level severity bugs. <br/><br/>● Founded Bugs: XSS, IDOR,Domain takeover, File Uploads<br/><br/>● Hacked companies like ABB.com, American System, PCET ERP, etc.",
   },
 ];
 
