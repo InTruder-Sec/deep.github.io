@@ -36,8 +36,8 @@ function Experience() {
           OpenDetails(props.id);
         }}
       >
-        <div className="expcard--img">
-          <img className="expcard--img" alt="vtfImage" src={props.img}></img>
+        <div className="expcard--img pad">
+          <img className="expcard--img exp-img-small" alt="vtfImage" src={props.img}></img>
         </div>
         <div className="expcard--dis">
           <div

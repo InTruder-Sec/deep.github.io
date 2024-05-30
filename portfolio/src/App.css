@@ -400,11 +400,20 @@ body {
   margin-left: 370px;
 }
 
+.pad {
+  padding: 5px;
+}
+
+.exp-img-small {
+  scale: 0.95;
+}
+
 .expcard--img {
   height: 350px;
   width: 350px;
   margin-left: 10px;
-  cursor: pointer;
+  /* cursor: pointer; */
+  background-color: rgb(0, 0, 0);
 }
 
 .expcard--dis {

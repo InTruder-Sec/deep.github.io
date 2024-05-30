@@ -1,5 +1,5 @@
 import expcardimg1 from "./../images/waveauth.png";
-import expcardimg2 from "./../images/techturning.webp";
+import expcardimg2 from "./../images/turninglabs.png";
 import expcardimg3 from "./../images/h1.jpg";
 
 const ExpData = [
